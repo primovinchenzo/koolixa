@@ -1,0 +1,250 @@
+.container {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xxxl);
+}
+
+.header {
+  max-width: 800px;
+  margin-bottom: var(--space-xxl);
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent-cyan);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-md);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Differentiators Grid */
+.diffSection {
+  margin-bottom: var(--space-xxxl);
+}
+
+.diffGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 992px) {
+  .diffGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.diffCard {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: var(--space-xl);
+  border-radius: var(--radius-md);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-normal);
+}
+
+.diffCard:hover {
+  border-color: var(--accent-cyan);
+  transform: translateY(-2px);
+}
+
+.diffCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-md);
+  position: relative;
+  z-index: 1;
+}
+
+.diffCard p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Comparison Table */
+.compareSection {
+  margin-bottom: var(--space-xxxl);
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  margin-bottom: var(--space-xs);
+  font-family: var(--font-heading);
+}
+
+.sectionSubtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: var(--space-xl);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-secondary);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 700px;
+}
+
+.colHeader {
+  padding: var(--space-md);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  background-color: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.koolixaHeader {
+  color: var(--accent-cyan);
+}
+
+.table tbody tr {
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition-fast);
+}
+
+.table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.highlightRow {
+  background-color: hsla(180, 100%, 45%, 0.02);
+}
+
+.table tbody tr:hover {
+  background-color: var(--bg-card-hover);
+}
+
+.cellFeature {
+  padding: var(--space-md);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.cellKoolixa {
+  padding: var(--space-md);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.cellAccent {
+  color: var(--accent-cyan);
+}
+
+.checkMark {
+  color: var(--accent-emerald);
+  margin-right: 4px;
+}
+
+.cellCompetitor {
+  padding: var(--space-md);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* SLA Callout */
+.slaCallout {
+  background-image: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  border: 1px solid var(--border-color);
+  padding: var(--space-xxl) var(--space-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.slaContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-md);
+}
+
+.slaContent h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.slaContent p {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 620px;
+  line-height: 1.6;
+}
+
+.slaStats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-xl);
+  margin: var(--space-md) 0 var(--space-lg) 0;
+  width: 100%;
+}
+
+.slaStat {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-sm);
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slaStat strong {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--accent-cyan);
+}
+
+.slaStat span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.ctaBtn {
+  padding: 0.85rem var(--space-xxl);
+  background-color: var(--accent-blue);
+  color: white;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+}
+
+.ctaBtn:hover {
+  background-color: hsl(217, 91%, 65%);
+  box-shadow: var(--shadow-glow-blue);
+  transform: translateY(-1px);
+}

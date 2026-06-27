@@ -1,0 +1,135 @@
+.container {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xxxl);
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: var(--space-xl);
+}
+
+.breadcrumb a {
+  transition: var(--transition-fast);
+}
+
+.breadcrumb a:hover {
+  color: var(--accent-cyan);
+}
+
+.current {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Article Shell */
+.article {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.85rem;
+  margin-bottom: var(--space-md);
+}
+
+.category {
+  font-weight: 700;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+}
+
+.divider {
+  color: var(--text-muted);
+}
+
+.date, .readTime {
+  color: var(--text-muted);
+}
+
+.title {
+  font-size: 2.2rem;
+  line-height: 1.25;
+  margin-bottom: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.8rem;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xxl);
+}
+
+.content p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+/* Article Footer Actions */
+.footer {
+  border-top: 1px solid var(--border-color);
+  padding-top: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+@media (min-width: 576px) {
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.backBtn {
+  padding: 0.75rem var(--space-xl);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: var(--transition-fast);
+  color: var(--text-secondary);
+  text-align: center;
+  align-self: flex-start;
+}
+
+.backBtn:hover {
+  border-color: var(--accent-cyan);
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+}
+
+.ctaBtn {
+  padding: 0.75rem var(--space-xl);
+  background-color: var(--accent-blue);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+  text-align: center;
+  align-self: flex-start;
+}
+
+.ctaBtn:hover {
+  background-color: hsl(217, 91%, 65%);
+  box-shadow: var(--shadow-glow-blue);
+  transform: translateY(-1px);
+}

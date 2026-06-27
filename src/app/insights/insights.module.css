@@ -1,0 +1,229 @@
+.container {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xxxl);
+}
+
+.header {
+  max-width: 800px;
+  margin-bottom: var(--space-xxl);
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent-cyan);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-md);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Articles list */
+.postsSection {
+  margin-bottom: var(--space-xxxl);
+}
+
+.postsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  .postsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .postsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.postCard {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: var(--space-xl);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  transition: var(--transition-fast);
+}
+
+.postCard:hover {
+  border-color: var(--accent-cyan);
+}
+
+.postMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.8rem;
+}
+
+.postCategory {
+  font-weight: 700;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+}
+
+.postDivider {
+  color: var(--text-muted);
+}
+
+.postDate {
+  color: var(--text-muted);
+}
+
+.postTitle {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 0;
+  flex-grow: 0;
+}
+
+.postTitleLink {
+  color: var(--text-primary);
+  transition: var(--transition-fast);
+}
+
+.postTitleLink:hover {
+  color: var(--accent-blue);
+}
+
+.postSummary {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+.postFooter {
+  border-top: 1px solid var(--border-color);
+  padding-top: var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.readTime {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.readMoreLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+.readMoreLink svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.2s ease;
+}
+
+.postCard:hover .readMoreLink svg {
+  transform: translateX(3px);
+}
+
+/* Newsletter Box */
+.newsletterSection {
+  margin-bottom: var(--space-xl);
+}
+
+.newsletterBox {
+  background-image: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  border: 1px solid var(--border-color);
+  padding: var(--space-xxl) var(--space-md);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  box-shadow: var(--shadow-md);
+}
+
+.newsletterBox h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+.newsletterBox p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  max-width: 580px;
+  line-height: 1.6;
+}
+
+.newsletterForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  width: 100%;
+  max-width: 480px;
+  margin-top: var(--space-sm);
+}
+
+@media (min-width: 576px) {
+  .newsletterForm {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.newsletterInput {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  transition: var(--transition-fast);
+}
+
+.newsletterInput:focus {
+  outline: none;
+  border-color: var(--accent-cyan);
+  box-shadow: var(--shadow-glow);
+}
+
+.newsletterBtn {
+  padding: 0.75rem var(--space-xl);
+  background-color: var(--accent-blue);
+  color: white;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+  white-space: nowrap;
+}
+
+.newsletterBtn:hover {
+  background-color: hsl(217, 91%, 65%);
+  box-shadow: var(--shadow-glow-blue);
+}

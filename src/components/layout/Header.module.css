@@ -1,0 +1,212 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: padding 0.3s ease, background-color var(--transition-normal), border-color var(--transition-normal);
+  padding: var(--space-md) 0;
+}
+
+.scrolled {
+  padding: var(--space-sm) 0;
+  box-shadow: var(--shadow-sm);
+  background-color: var(--glass-bg);
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+}
+
+.logo .accent {
+  color: var(--accent-cyan);
+}
+
+.desktopNav {
+  display: none;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 992px) {
+  .desktopNav {
+    display: flex;
+  }
+}
+
+.navLink {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  position: relative;
+  padding: 4px 0;
+}
+
+.navLink:hover {
+  color: var(--text-primary);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-cyan);
+  transition: var(--transition-normal);
+}
+
+.navLink.active {
+  color: var(--text-primary);
+}
+
+.navLink.active::after, .navLink:hover::after {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.ctaButton {
+  display: none;
+  padding: var(--space-sm) var(--space-lg);
+  background-color: var(--accent-blue);
+  color: hsl(210, 40%, 98%);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.ctaButton:hover {
+  background-color: hsl(217, 91%, 65%);
+  box-shadow: var(--shadow-glow-blue);
+  transform: translateY(-1px);
+}
+
+@media (min-width: 768px) {
+  .ctaButton {
+    display: inline-block;
+  }
+}
+
+.mobileMenuToggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 101;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .mobileMenuToggle {
+    display: none;
+  }
+}
+
+.burgerLine {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-primary);
+  transition: var(--transition-normal);
+  transform-origin: left center;
+}
+
+.menuActive .burgerLine:nth-child(1) {
+  transform: rotate(45deg) translateY(-2px);
+}
+
+.menuActive .burgerLine:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.menuActive .burgerLine:nth-child(3) {
+  transform: rotate(-45deg) translateY(2px);
+}
+
+/* Mobile Navigation Drawer */
+.mobileNavContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  z-index: 99;
+  transform: translateY(-100%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileOpen {
+  transform: translateY(0);
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+  width: 100%;
+  padding: var(--space-xxl);
+}
+
+.mobileNavLink {
+  font-size: 1.4rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+.mobileNavLink:hover, .mobileNavLink.active {
+  color: var(--accent-cyan);
+}
+
+.mobileCta {
+  margin-top: var(--space-md);
+  padding: var(--space-md) var(--space-xxl);
+  background-color: var(--accent-blue);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.mobileCta:hover {
+  background-color: hsl(217, 91%, 65%);
+}
