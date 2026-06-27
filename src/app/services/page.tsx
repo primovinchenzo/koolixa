@@ -4,75 +4,75 @@ import { Metadata } from 'next';
 import styles from './services.module.css';
 
 export const metadata: Metadata = {
-  title: 'Our Capabilities & B2B IT Services',
-  description: 'Explore KOOLIXA capabilities including Managed IT support, co-managed cybersecurity, custom website development, backup integrity, and technical project management.',
+  title: 'Our Capabilities & Web Solutions',
+  description: 'Explore KOOLIXA capabilities including Custom Web Engineering, continuous maintenance, website security hardening, technical scoping, and backup redundancy.',
 };
 
 export default function ServicesPage() {
   const capabilityAreas = [
     {
-      id: 'managed-it',
-      title: 'Managed IT Support',
-      tagline: 'Help Desk & User Administration',
-      desc: 'Proactive management of workstation health, account lifecycle, user provisioning, password administration, and priority help desk resolution.',
-      link: '/services/managed-it',
+      id: 'web-development',
+      title: 'Custom Web Engineering & Launch',
+      tagline: 'Premium Performance & Type-Safe Builds',
+      desc: 'Designing and building custom, high-speed, and secure website platforms using Next.js and TypeScript from scratch for companies who don’t have a website or need a major rebuild.',
+      link: '/services/web-development',
       points: [
-        'Responsive Tier 1-3 help desk (average response <14 mins)',
-        'Active Directory, Google Workspace, and M365 provisioning',
-        'Secure remote monitoring and patching protocols',
-        'Workstation health and inventory reporting',
+        'Next.js App Router and type-safe TypeScript architectures',
+        'Mobile-first responsive grids and semantic HTML structures',
+        'Lighthouse optimizations (guaranteeing 90+ score criteria)',
+        'Connecting contact channels, database tables, and API endpoints',
       ],
     },
     {
       id: 'cybersecurity',
-      title: 'Cybersecurity Coordination',
-      tagline: 'Vulnerability Review & Threat Isolation',
-      desc: 'Active security posture hardening, compliance alignments, vulnerability scanning, and co-managed coordination with outsourced 24/7 security monitoring teams.',
+      title: 'Website Security Hardening',
+      tagline: 'Vulnerability Scanning & Firewall Configurations',
+      desc: 'Locking down websites against hacking, DDoS attacks, and spam bots. Configuring Web Application Firewalls (WAF) and SSL keys to ensure total data integrity.',
       link: '/services/cybersecurity',
       points: [
-        'Vulnerability assessments & network scanning',
-        'Outsourced co-managed SOC/SIEM coordination',
-        'Internal security policy design and employee training',
-        'Incident isolation and remediation plan execution',
+        'Domain WAF (Web Application Firewall) setup & configuration',
+        'SSL certificate setups and secure redirect rule definitions',
+        'Daily, automated vulnerability and malware scans',
+        'Compliance alignments for client-side privacy laws',
       ],
     },
     {
-      id: 'web-development',
-      title: 'Web System Development',
-      tagline: 'Custom Engineering & Performance',
-      desc: 'Engineering premium, high-speed, secure, and SEO-optimized website platforms utilizing Next.js, React, and serverless architectures.',
-      link: '/services/web-development',
+      id: 'managed-it',
+      title: 'Continuous Maintenance & Operations',
+      tagline: 'Help Desk, Updates & Domain Management',
+      desc: 'Managing content modifications, hosting configs, domain DNS changes, and business email infrastructure (Google Workspace / Microsoft 365) to keep operations smooth.',
+      link: '/services/managed-it',
       points: [
-        'Next.js App Router and TypeScript builds',
-        'Core Web Vitals tuning and performance audits',
-        'Accessibility compliance audits (WCAG 2.1 AA)',
-        'Secure API route handlings and database integrations',
-      ],
-    },
-    {
-      id: 'project-delivery',
-      title: 'Project Delivery & Coordination',
-      tagline: 'Technical Scope & On-Time Execution',
-      desc: 'Bridging technical gaps between leadership, developers, and clients. Ensuring milestones, timelines, and deliverables are hit with precision.',
-      link: '/services/project-delivery',
-      points: [
-        'Technical project scoping & estimation audits',
-        'Milestone tracking and developer workflow syncs',
-        'Client-to-engineering requirement translation',
-        'Risk assessment and resource bottlenecks tracking',
+        'SLA-backed help desk for fast website edits and content updates',
+        'DNS records configuration (DKIM, SPF, and DMARC settings)',
+        'Business email accounts setup and access lifecycles management',
+        'Hosting infrastructure, API integrations, and serverless checks',
       ],
     },
     {
       id: 'backup-stability',
-      title: 'Backup, Recovery & Stability',
-      tagline: 'Rolling Diagnostics & Rollback Readiness',
-      desc: 'Automating off-site, encrypted data redundancy, validating recovery timelines, and running QA check scripts to guarantee uptime.',
+      title: 'Backup Redundancy & Recovery',
+      tagline: 'Uptime Diagnostics & Automated Recovery Checks',
+      desc: 'Ensuring your site is always online. Creating encrypted, off-site data replication loops and executing recovery restore drills to guarantee immediate rollback readiness.',
       link: '/services/backup-stability',
       points: [
-        'Encrypted, immutable off-site data replication',
-        'Disaster recovery exercises & rollback validation',
-        'Uptime and response tracking metrics reporting',
-        'QA system check script runoffs and diagnostics',
+        'Automated, daily encrypted website and database backups',
+        'Disaster recovery restore checks in isolated sandboxes',
+        'Serverless deployment rollback configuration (<30 seconds execution)',
+        'Uptime diagnostics and server health alerts setup',
+      ],
+    },
+    {
+      id: 'project-delivery',
+      title: 'Technical Scoping & Project Delivery',
+      tagline: 'Scope Definition, Timelines & Launch Management',
+      desc: 'Guiding your project from design concepts to production launch. We define precise scopes, milestones, and deliverables to ensure on-time deployment.',
+      link: '/services/project-delivery',
+      points: [
+        'Detailed site scoping and technical requirements mapping',
+        'Milestone tracking with weekly client reports and visibility',
+        'Translating design layouts into technical specifications',
+        'Vercel deployment setup and staging environments setup',
       ],
     },
   ];
@@ -85,7 +85,7 @@ export default function ServicesPage() {
           <div className={styles.headerBox}>
             <h1 className={styles.title}>Capability & Service Offerings</h1>
             <p className={styles.subtitle}>
-              KOOLIXA provides highly structured, SLA-backed technical capabilities to protect systems, support teams, and engineer secure code environments.
+              KOOLIXA provides end-to-end web presence operations. We construct your website, secure it against threats, and continuously manage upgrades and support.
             </p>
           </div>
         </div>
@@ -152,26 +152,26 @@ export default function ServicesPage() {
         <div className="container">
           <div className={styles.pricingBox}>
             <div className={styles.pricingContent}>
-              <h2 className={styles.pricingTitle}>Tailored B2B SLA Pricing Model</h2>
+              <h2 className={styles.pricingTitle}>Tailored B2B Engagement Model</h2>
               <p className={styles.pricingText}>
-                We reject flat-rate, cookie-cutter plans. KOOLIXA operates on customized, service-level agreements (SLAs) tailored to your exact headcount, regulatory posture, and infrastructure complexity.
+                We do not believe in one-size-fits-all pricing. KOOLIXA custom-scopes projects based on website size, dynamic database complexity, and ongoing maintenance SLA seat counts.
               </p>
               <div className={styles.pricingSteps}>
                 <div className={styles.stepItem}>
-                  <strong>1. Vulnerability Audit</strong>
-                  <p>We review your current systems, network logs, and configurations to determine existing vulnerabilities.</p>
+                  <strong>1. Discovery & Design Scoping</strong>
+                  <p>We review your business targets and map layout mockups, technical structures, and feature requirements.</p>
                 </div>
                 <div className={styles.stepItem}>
-                  <strong>2. Retainer Tailoring</strong>
-                  <p>We build a co-managed or fully managed support proposal based on active seats and monitoring complexity.</p>
+                  <strong>2. Custom Web Construction</strong>
+                  <p>We engineer your site from scratch using Next.js, optimizing speed profiles and securing credentials before launch.</p>
                 </div>
                 <div className={styles.stepItem}>
-                  <strong>3. SLA Execution</strong>
-                  <p>We sign clear parameters for response times, backup checking frequencies, and project delivery deadlines.</p>
+                  <strong>3. Operations & Maintenance SLA</strong>
+                  <p>We sign a service level agreement detailing response times, backup frequency checking, and security update routines.</p>
                 </div>
               </div>
               <Link href="/contact" className={styles.pricingCta}>
-                Request Vulnerability Assessment
+                Request Website Proposal
               </Link>
             </div>
           </div>

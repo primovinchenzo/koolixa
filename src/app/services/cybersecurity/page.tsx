@@ -4,27 +4,27 @@ import { Metadata } from 'next';
 import styles from '../service-single.module.css';
 
 export const metadata: Metadata = {
-  title: 'Co-Managed Cybersecurity & Vulnerability Audits',
-  description: 'Proactive vulnerability assessments, local security policies alignment, and 24/7 co-managed incident coordination with security operations centers.',
+  title: 'Website Security Hardening & Malware Protection',
+  description: 'Proactive website threat protection, domain SSL configuration, Web Application Firewall (WAF) setups, and daily security scans.',
 };
 
 export default function CybersecurityPage() {
   const features = [
     {
-      title: 'Vulnerability Assessment & Scanning',
-      desc: 'Scheduled internal and external scans to find weak points in firewalls, outdated workstation packages, configuration errors, and network exposures before attackers do.',
+      title: 'Web Application Firewall (WAF) Configurations',
+      desc: 'Deploying custom security rules to block malicious requests, prevent SQL injection attempts, and stop automated vulnerability scanners before they reach your site code.',
     },
     {
-      title: 'Co-Managed 24/7 SOC Integration',
-      desc: 'We coordinate monitoring with our premier, outsourced 24/7 security operations center (SOC). We filter alert noise, escalate critical threat markers, and execute isolation protocols.',
+      title: 'SSL Encryption & Redirection Rules',
+      desc: 'Enforcing HTTPS redirect standards, auditing SSL certificate expirations, and locking down cookie transport vectors to protect client data.',
     },
     {
-      title: 'Security Policy Engineering',
-      desc: 'Custom-designed operational security guidelines for your staff, including multi-factor authentication (MFA) enforcement, clean desk policies, and device compliance checking.',
+      title: 'Daily Vulnerability Scanning',
+      desc: 'Automated scans of your hosting configurations, third-party package dependencies, and public routes to identify exposures and deploy hotfixes.',
     },
     {
-      title: 'Incident Containment & Remediation',
-      desc: 'Rapid containment response. In the event of a threat alert, our analysts isolate compromised machines, block rogue IP segments, and lead remediation workflows.',
+      title: 'Spam Bot & DDoS Mitigation',
+      desc: 'Integrating cloud routing systems to mitigate denial of service attacks, filter form spam, and protect CPU usage from brute force crawlers.',
     },
   ];
 
@@ -35,16 +35,16 @@ export default function CybersecurityPage() {
         <div className={styles.breadcrumb}>
           <Link href="/services">Services</Link>
           <span>/</span>
-          <span className={styles.current}>Cybersecurity Coordination</span>
+          <span className={styles.current}>Website Security</span>
         </div>
 
         {/* Hero Area */}
         <section className={styles.heroSection}>
           <div className={styles.heroContent}>
-            <span className={`${styles.serviceBadge} ${styles.securityBadge}`}>Security Core</span>
-            <h1 className={styles.title}>Co-Managed Cybersecurity & Auditing</h1>
+            <span className={`${styles.serviceBadge} ${styles.securityBadge}`}>Secure Core</span>
+            <h1 className={styles.title}>Website Security Hardening & Threat Protection</h1>
             <p className={styles.subtitle}>
-              Protect your business assets with proactive vulnerability reviews, local system hardening, and co-managed SOC incident coordination.
+              Protect your business reputation. Harden your website codebase against hacking, DDoS attacks, and domain spoofing.
             </p>
           </div>
         </section>
@@ -53,12 +53,12 @@ export default function CybersecurityPage() {
         <div className={styles.mainGrid}>
           {/* Detailed Description */}
           <div className={styles.detailsContent}>
-            <h2>Strategic Threat Mitigation</h2>
+            <h2>Active Threat Mitigation for the Web</h2>
             <p>
-              Modern cybersecurity is not a set-it-and-forget-it software download. It requires continuous analysis, structured policy guidelines, and immediate threat containment protocols.
+              Insecure websites are major targets for ransomware, search engine spam index injection, and data leaks. Protecting your business online requires more than a simple plugin.
             </p>
             <p>
-              KOOLIXA acts as your internal security desk. We work alongside global co-managed security operations centers to analyze network logs, identify weak links, and respond immediately to threats.
+              KOOLIXA integrates security checks directly into the website lifecycle. We configure secure domain routing, deploy WAF rules, and manage vulnerability patches continuously.
             </p>
 
             <div className={styles.featuresList}>
@@ -77,16 +77,16 @@ export default function CybersecurityPage() {
               <h3>Security Statistics</h3>
               <ul className={styles.metricsList}>
                 <li>
-                  <strong>24 / 7 / 365</strong>
-                  <span>Active Threat Coordination Sync</span>
+                  <strong>24 / 7</strong>
+                  <span>Active Uptime & WAF Monitoring</span>
                 </li>
                 <li>
-                  <strong>100%</strong>
-                  <span>Incident Isolation Rate</span>
+                  <strong>SSL / TLS 1.3</strong>
+                  <span>Standard Encryption Deployment</span>
                 </li>
                 <li>
-                  <strong>Zero Trust</strong>
-                  <span>Architecture & Principle Alignment</span>
+                  <strong>0 Vulnerability</strong>
+                  <span>Target Posture standard</span>
                 </li>
               </ul>
             </div>
@@ -94,10 +94,10 @@ export default function CybersecurityPage() {
             <div className={styles.sideCard}>
               <h3>Aligned Roles</h3>
               <p className={styles.roleDesc}>
-                This service is led by our internal **Cybersecurity Analysts**, backed by senior **CTO and CEO Oversight**, and verified by automated auditing rules.
+                This capability is run by our **Security Analysts**, verified by automated **QA Audits**, and integrated by our **Web Developers**.
               </p>
               <Link href="/contact" className={styles.sideCta}>
-                Schedule Security Review
+                Harden Your Website Security
               </Link>
             </div>
           </div>

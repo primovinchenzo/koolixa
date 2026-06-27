@@ -4,36 +4,36 @@ import { Metadata } from 'next';
 import styles from './about.module.css';
 
 export const metadata: Metadata = {
-  title: 'About Our Mission & Leadership',
-  description: 'Learn about the KOOLIXA mission, operational leadership principles, cybersecurity posture, and technical standards.',
+  title: 'About Our Web Operations Mission',
+  description: 'Understand the KOOLIXA mission: we construct premium websites for businesses and manage their hosting operations, security, and content updates.',
 };
 
 export default function AboutPage() {
   const values = [
     {
-      title: 'Resilience First',
-      desc: 'We design and build systems under the assumption that components fail. Our architecture relies on rolling backup replication, redundancies, and instant rollback capabilities.',
+      title: 'Premium Web Engineering',
+      desc: 'We reject template-based drag-and-drop systems. We build modern, type-safe Next.js codebases designed for fast loading speed, semantic layout structure, and SEO crawl visibility.',
     },
     {
-      title: 'Proactive Auditing',
-      desc: 'Reactive support is a failure. We run scheduled vulnerability reviews, log monitoring checks, and diagnostic scripts to contain threats before they escalate.',
+      title: 'Built-In Security Posture',
+      desc: 'We integrate security parameters directly during construction. Every website we build includes active WAF rules, SSL enforcement, and secure backend form routers.',
     },
     {
-      title: 'Absolute Transparency',
-      desc: 'We communicate project scopes, resource allocations, and threat mitigation actions clearly. Clients receive precise logs and clear metric reporting.',
+      title: 'Continuous Maintenance',
+      desc: 'We support our clients for the long haul. We monitor site uptime, manage DNS updates, configure business emails, and coordinate content edits with strict SLA response times.',
     },
   ];
 
   const executiveTeam = [
     {
       name: 'CEO & Founder',
-      role: 'Strategic Operations & Client Governance',
-      bio: 'Leading hiring, financial management, and SLA compliance. Coordinates KOOLIXA operations with client requirements.',
+      role: 'Business Strategy & Client Partnerships',
+      bio: 'Manages corporate hiring, client onboarding, financial operations, and support-desk SLA compliance.',
     },
     {
-      name: 'CTO & Technical Director',
-      role: 'Systems Architecture & Security Policy',
-      bio: 'Directs developer guidelines, co-managed SOC relationships, vulnerability standards, and recovery plans.',
+      name: 'CTO & Engineering Lead',
+      role: 'Web Systems Architecture & Security Standards',
+      bio: 'Oversees codebase guidelines, Vercel deployments, domain security configurations, and database routers.',
     },
   ];
 
@@ -43,15 +43,15 @@ export default function AboutPage() {
         {/* Intro */}
         <section className={styles.header}>
           <span className={styles.badge}>Our Mission</span>
-          <h1 className={styles.title}>The KOOLIXA Architecture</h1>
+          <h1 className={styles.title}>The Web Operations Partner</h1>
           <p className={styles.subtitle}>
-            KOOLIXA was founded to bridge the gap between complex digital engineering and stable B2B infrastructure. We design resilient systems that let organizations focus on scaling.
+            KOOLIXA was founded to bridge the gap between creative design and technical systems stability. We build beautiful websites and provide the continuous engineering, security, and operations support to keep them growing.
           </p>
         </section>
 
         {/* Corporate Values */}
         <section className={styles.valuesSection}>
-          <h2 className={styles.sectionTitle}>Operational Core Values</h2>
+          <h2 className={styles.sectionTitle}>Foundational Engineering Values</h2>
           <div className={styles.valuesGrid}>
             {values.map((val, idx) => (
               <div key={idx} className={styles.valueCard}>
@@ -68,17 +68,17 @@ export default function AboutPage() {
           <div className={styles.frameworkBox}>
             <h2>Operational Governance</h2>
             <p>
-              Maintaining system uptime requires structured organizational control. KOOLIXA enforces operational policies covering hiring, support technician certifications, and budget governance:
+              Building and maintaining high-quality web presence requires strict workflow standards. KOOLIXA manages operations using clear policies:
             </p>
             <ul className={styles.frameworkList}>
               <li>
-                <strong>Strict Hiring Requirements:</strong> Every technician, developer, and analyst undergoes comprehensive background vetting and maintains active certifications (e.g., Security+, Network+).
+                <strong>Experienced Web Engineers:</strong> Our developers are vetted experts in TypeScript, React, and serverless database integration.
               </li>
               <li>
-                <strong>Tool Standardization:</strong> We only utilize audited, co-managed toolsets for endpoint logging, data replication, and ticket management.
+                <strong>Continuous Security Auditing:</strong> We scan client sites daily for vulnerability alerts, expired SSL certifications, and malware signatures.
               </li>
               <li>
-                <strong>QA Review Processes:</strong> Our launch managers run build validations, keyboard navigation audits, and security check scripts before deploying code.
+                <strong>SLA-Backed Support Desk:</strong> Content updates, domain transfers, and mailbox configurations are handled by our technical technicians with guaranteed speed.
               </li>
             </ul>
           </div>
@@ -100,10 +100,10 @@ export default function AboutPage() {
 
         {/* Bottom CTA */}
         <section className={styles.cta}>
-          <h2>Align Your Infrastructure With KOOLIXA</h2>
-          <p>Request an audit of your current systems, directory configurations, and network posture.</p>
+          <h2>Launch Your New Web Presence</h2>
+          <p>Let’s discuss your design ideas, feature requirements, and ongoing support parameters.</p>
           <Link href="/contact" className={styles.ctaBtn}>
-            Speak with Leadership
+            Speak with an Engineering Lead
           </Link>
         </section>
       </div>

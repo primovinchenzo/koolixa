@@ -4,27 +4,27 @@ import { Metadata } from 'next';
 import styles from '../service-single.module.css';
 
 export const metadata: Metadata = {
-  title: 'Custom Web Development & Infrastructure Optimization',
-  description: 'High-performance Next.js App Router websites, Core Web Vitals optimization, API integrations, and WCAG accessibility compliance.',
+  title: 'Custom Web Engineering & Website Launch',
+  description: 'High-speed Next.js App Router websites built from scratch. Type-safe TypeScript coding, custom design system, and optimized SEO.',
 };
 
 export default function WebDevelopmentPage() {
   const features = [
     {
-      title: 'Next.js App Router & TypeScript Engineering',
-      desc: 'We build modern web applications leveraging React Server Components (RSC) for lightning-fast initial load times, type-safe structures, and clean codebase scaling.',
+      title: 'Next.js App Router & TypeScript Builds',
+      desc: 'We construct custom web codebases from scratch using React Server Components. This guarantees lightning-fast loading speeds and easy updates without reliance on heavy templates.',
     },
     {
-      title: 'Core Web Vitals & Speed Tuning',
-      desc: 'Optimizing image compression formats, implementing layout shift (CLS) fixes, reducing javascript bundles, and tuning serverless function configurations to hit 90+ Lighthouse targets.',
+      title: 'Responsive Design & Accessibility',
+      desc: 'Our designs adapt to all screen sizes. We code semantic HTML markup, ensuring WCAG 2.1 AA accessibility compliance and keyboard navigability.',
     },
     {
-      title: 'Accessibility & SEO Auditing',
-      desc: 'Strict alignment with WCAG 2.1 AA accessibility parameters, semantic markup, full keyboard navigations, automated sitemaps, structured schema data, and meta descriptions.',
+      title: 'SEO Hardening & Search Readiness',
+      desc: 'We optimize website speed, code metadata structures, and generate automated sitemaps. We make sure search engine crawlers index your site correctly from day one.',
     },
     {
-      title: 'Full-Stack Integrations & Route Handlers',
-      desc: 'Connecting frontends to serverless databases (e.g. Neon, Supabase), API microservices, Stripe payment processing, and email systems with secure route handlers.',
+      title: 'Interactive Features & Integrations',
+      desc: 'Connecting your front-end to serverless databases, intake forms (e.g. Formspree/Resend), analytics tools, and business emails.',
     },
   ];
 
@@ -35,16 +35,16 @@ export default function WebDevelopmentPage() {
         <div className={styles.breadcrumb}>
           <Link href="/services">Services</Link>
           <span>/</span>
-          <span className={styles.current}>Web Development</span>
+          <span className={styles.current}>Web Engineering</span>
         </div>
 
         {/* Hero Area */}
         <section className={styles.heroSection}>
           <div className={styles.heroContent}>
-            <span className={`${styles.serviceBadge} ${styles.devBadge}`}>Development Core</span>
-            <h1 className={styles.title}>Web System Development & Engineering</h1>
+            <span className={`${styles.serviceBadge} ${styles.devBadge}`}>Build Core</span>
+            <h1 className={styles.title}>Custom Web Engineering & Website Launch</h1>
             <p className={styles.subtitle}>
-              Deploy modern, premium web experiences built for high conversion, strict accessibility standards, and SEO rankings.
+              Construct a premium, high-speed business website from scratch. Engineered for search rankings, conversions, and speed.
             </p>
           </div>
         </section>
@@ -53,12 +53,12 @@ export default function WebDevelopmentPage() {
         <div className={styles.mainGrid}>
           {/* Detailed Description */}
           <div className={styles.detailsContent}>
-            <h2>Performance-Driven Engineering</h2>
+            <h2>Custom Code over Outdated Templates</h2>
             <p>
-              Your website is your primary digital storefront and customer intake system. Cookie-cutter templates and slow web platforms alienate visitors, reduce conversions, and hurt search visibility.
+              Many web development agencies rely on generic website builders that load excessive scripts, slowing down page speeds and hurting search rankings.
             </p>
             <p>
-              KOOLIXA engineers custom, high-speed, secure web environments. We focus on lightweight assets, modern TypeScript configurations, strict accessibility, and optimized Vercel edge routes.
+              KOOLIXA designs and constructs premium, bespoke web presences. We focus on lightweight assets, clean typography, optimized Core Web Vitals, and type-safe Next.js pages.
             </p>
 
             <div className={styles.featuresList}>
@@ -74,19 +74,19 @@ export default function WebDevelopmentPage() {
           {/* Sidebar Info */}
           <div className={styles.sidebar}>
             <div className={styles.sideCard}>
-              <h3>Engineering Performance</h3>
+              <h3>Build Performance</h3>
               <ul className={styles.metricsList}>
+                <li>
+                  <strong>95+</strong>
+                  <span>Lighthouse Performance & SEO Targets</span>
+                </li>
                 <li>
                   <strong>&lt; 1.2s</strong>
                   <span>Largest Contentful Paint (LCP)</span>
                 </li>
                 <li>
-                  <strong>90+</strong>
-                  <span>Lighthouse Performance & SEO Targets</span>
-                </li>
-                <li>
-                  <strong>WCAG 2.1 AA</strong>
-                  <span>Strict Accessibility Compliance</span>
+                  <strong>TypeScript</strong>
+                  <span>Strict Type-Safe Build Standards</span>
                 </li>
               </ul>
             </div>
@@ -94,7 +94,7 @@ export default function WebDevelopmentPage() {
             <div className={styles.sideCard}>
               <h3>Aligned Roles</h3>
               <p className={styles.roleDesc}>
-                This capability is run by our internal **Web Developers**, audited by our **Accessibility & SEO Lead**, and deployed by our **Vercel Architects**.
+                This service is executed by our **Web Developers**, audited by our **SEO Lead**, and configured by our **Vercel Architects**.
               </p>
               <Link href="/contact" className={styles.sideCta}>
                 Discuss Your Web Project

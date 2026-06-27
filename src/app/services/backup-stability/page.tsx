@@ -4,27 +4,27 @@ import { Metadata } from 'next';
 import styles from '../service-single.module.css';
 
 export const metadata: Metadata = {
-  title: 'Backup, Recovery & System Stability Support',
-  description: 'Encrypted, immutable off-site data replication, recovery exercises, system stability testing, and rollback readiness audits.',
+  title: 'Website Backup Redundancy & Recovery Support',
+  description: 'Automated daily encrypted website backups, monthly recovery restore testing, and deployment rollback setups to guarantee 99.9% uptime.',
 };
 
 export default function BackupStabilityPage() {
   const features = [
     {
-      title: 'Automated, Immutable Backups',
-      desc: 'Configuring daily, block-level encrypted replication of company data to off-site, air-gapped repositories. Ensures data cannot be modified or deleted by ransomware.',
+      title: 'Automated Daily Data Replication',
+      desc: 'Configuring encrypted, block-level daily backups of your code assets, media storage pools, and database records. Ensures zero data loss in the event of an issue.',
     },
     {
-      title: 'Disaster Recovery & Rollback Exercises',
-      desc: 'We don’t just back up; we test recovery. We run monthly restoration drills to verify that backups boot correctly and calculate recovery time objectives (RTOs).',
+      title: 'Sandbox Recovery Restoration Testing',
+      desc: 'Backups are only valuable if they restore. We execute monthly restore drills in isolated staging sandboxes to verify data integrity and boot speeds.',
     },
     {
-      title: 'System Stability & QA Checks',
-      desc: 'Custom-configured health check scripts and diagnostic runoffs to monitor server memory usage, disk read/write speeds, and API latencies.',
+      title: 'Rollback Deployment Readiness',
+      desc: 'Setting up automated rollback settings in your hosting environment (e.g. Vercel deployment logs), enabling 30-second version reverts if bad edits occur.',
     },
     {
-      title: 'Rollback Readiness & Deploy Audits',
-      desc: 'Setting up automated rollback configs in serverless environments, making sure that bad code releases can be reverted in under 30 seconds with zero data loss.',
+      title: 'Speed & Performance Auditing',
+      desc: 'Continuous monitoring of API response times, database query execution speeds, and server loads to optimize performance and prevent bottlenecks.',
     },
   ];
 
@@ -35,16 +35,16 @@ export default function BackupStabilityPage() {
         <div className={styles.breadcrumb}>
           <Link href="/services">Services</Link>
           <span>/</span>
-          <span className={styles.current}>Backup & Recovery</span>
+          <span className={styles.current}>Backup & Uptime</span>
         </div>
 
         {/* Hero Area */}
         <section className={styles.heroSection}>
           <div className={styles.heroContent}>
             <span className={`${styles.serviceBadge} ${styles.stabilityBadge}`}>Resilience Core</span>
-            <h1 className={styles.title}>Backup, Recovery & System Stability</h1>
+            <h1 className={styles.title}>Backup Redundancy & Uptime Audits</h1>
             <p className={styles.subtitle}>
-              Guarantee business continuity with automated off-site backups, restore drill validations, and server stability monitoring.
+              Guarantee business continuity. Secure your site data with automated daily backups, restore verification drills, and rollback setups.
             </p>
           </div>
         </section>
@@ -53,12 +53,12 @@ export default function BackupStabilityPage() {
         <div className={styles.mainGrid}>
           {/* Detailed Description */}
           <div className={styles.detailsContent}>
-            <h2>Engineering Total Business Continuity</h2>
+            <h2>Engineering 99.9% Website Availability</h2>
             <p>
-              Hardware fails, databases get corrupted, and malicious actors target B2B networks. Business continuity is not an option; it is an absolute operational necessity.
+              Hosting servers fail, databases experience corruption, and manual mistakes happen. Maintaining a stable B2B website requires a comprehensive disaster recovery plan.
             </p>
             <p>
-              KOOLIXA designs layered, automated backup architectures. We monitor storage pools daily, run recovery drills monthly, and design deployment strategies to keep systems running.
+              KOOLIXA builds redundant layers. We automate off-site, air-gapped data replication, test restorations monthly, and configure rollback profiles to protect your site.
             </p>
 
             <div className={styles.featuresList}>
@@ -74,19 +74,19 @@ export default function BackupStabilityPage() {
           {/* Sidebar Info */}
           <div className={styles.sidebar}>
             <div className={styles.sideCard}>
-              <h3>Uptime & Continuity Metrics</h3>
+              <h3>Uptime & Recovery Metrics</h3>
               <ul className={styles.metricsList}>
                 <li>
                   <strong>&lt; 30 Seconds</strong>
-                  <span>Serverless Deployment Rollback Speed</span>
+                  <span>Version Rollback Resolution Speed</span>
                 </li>
                 <li>
                   <strong>256-bit AES</strong>
-                  <span>Data Encryption In-Transit & At-Rest</span>
+                  <span>Backup Encryption In-Transit & At-Rest</span>
                 </li>
                 <li>
                   <strong>Monthly</strong>
-                  <span>Automated Restoration Verification Drill</span>
+                  <span>Sandbox Restoration Verification Drill</span>
                 </li>
               </ul>
             </div>
@@ -94,10 +94,10 @@ export default function BackupStabilityPage() {
             <div className={styles.sideCard}>
               <h3>Aligned Roles</h3>
               <p className={styles.roleDesc}>
-                This service is executed by our internal **Debugging & Backup Desk**, audited by our **QA Manager**, and supported by **IT Support Technicians**.
+                This service is led by our **Debugging & Backup Desk**, audited by our **QA Lead**, and integrated by our **Web Developers**.
               </p>
               <Link href="/contact" className={styles.sideCta}>
-                Audit Your Backup Infrastructure
+                Configure Your Backup Architecture
               </Link>
             </div>
           </div>

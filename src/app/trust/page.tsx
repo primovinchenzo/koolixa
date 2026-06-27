@@ -4,23 +4,23 @@ import { Metadata } from 'next';
 import styles from './trust.module.css';
 
 export const metadata: Metadata = {
-  title: 'Security, Privacy & Trust Center',
-  description: 'Learn about KOOLIXA data protection policies, co-managed cybersecurity controls, and framework alignment standards.',
+  title: 'Website Security, Privacy & Trust Center',
+  description: 'Learn about KOOLIXA web-layer security controls, domain hardening, DDoS protection, and privacy compliance guidelines.',
 };
 
 export default function TrustPage() {
   const securityControls = [
     {
-      title: 'Encryption Standards',
-      desc: 'All internal and client data is protected using AES 256-bit encryption at rest, and transport layer security (TLS 1.3) during transit.',
+      title: 'Web Application Firewalls (WAF)',
+      desc: 'We configure WAF rules on all client websites to filter out malicious requests, block SQL injections, and defend against automated site exploits.',
     },
     {
-      title: 'Zero Trust Access Controls',
-      desc: 'Access to system configurations requires multi-factor authentication (MFA) and is governed by the principle of least privilege (PoLP).',
+      title: 'DDoS Containment & Mitigation',
+      desc: 'We host platforms on robust cloud networks (e.g. Vercel edge networks, Cloudflare integration) that absorb volumetric traffic spikes and DDoS attacks.',
     },
     {
-      title: 'Vendor Oversight',
-      desc: 'Our co-managed security operations center (SOC) partners are audited annually for SOC 2 Type II compliance.',
+      title: 'Domain Governance & DNS Checklists',
+      desc: 'Locking down email and domain access. We enforce SPF, DKIM, and DMARC settings to stop domain spoofing and phishing attempts.',
     },
   ];
 
@@ -30,15 +30,15 @@ export default function TrustPage() {
         {/* Header */}
         <section className={styles.header}>
           <span className={styles.badge}>Trust Center</span>
-          <h1 className={styles.title}>Security, Privacy & Compliance</h1>
+          <h1 className={styles.title}>Website Security & Compliance</h1>
           <p className={styles.subtitle}>
-            KOOLIXA operates under strict security and data governance rules. Review our data protection measures and compliance postures.
+            A secure website builds business credibility. Review our web-hardening measures, SSL configs, and data governance policies.
           </p>
         </section>
 
         {/* Security Controls Grid */}
         <section className={styles.controlsSection}>
-          <h2 className={styles.sectionTitle}>Data Protection Measures</h2>
+          <h2 className={styles.sectionTitle}>Website Security Infrastructure</h2>
           <div className={styles.controlsGrid}>
             {securityControls.map((ctrl, idx) => (
               <div key={idx} className={styles.controlCard}>
@@ -52,32 +52,32 @@ export default function TrustPage() {
         {/* Methodology Alignment */}
         <section className={styles.alignmentSection}>
           <div className={styles.alignmentBox}>
-            <h2>Framework Methodologies</h2>
+            <h2>Framework & Audits Alignment</h2>
             <p>
-              We align our cybersecurity policies, diagnostic checklists, and backup routines with industry-standard compliance guidelines:
+              We align our website configurations and deployment pipelines with standard compliance frameworks to assist in customer auditing checks:
             </p>
             
             <div className={styles.frameworksGrid}>
               <div className={styles.frameworkCard}>
-                <h3>NIST CSF Alignment</h3>
+                <h3>OWASP Top 10 Protections</h3>
                 <p>
-                  We model threat identification, asset protection, detect monitors, response plans, and recovery checks after the NIST Cybersecurity Framework.
+                  We audit site logic and API routes against the OWASP Top 10 to eliminate standard vulnerabilities like cross-site scripting (XSS) and broken object access.
                 </p>
-                <span className={styles.postureBadge}>Audited Operations</span>
+                <span className={styles.postureBadge}>Audited Configurations</span>
               </div>
 
               <div className={styles.frameworkCard}>
-                <h3>SOC 2 Guidelines Alignment</h3>
+                <h3>GDPR & Privacy Guidelines</h3>
                 <p>
-                  We enforce access logging, incident response documentation, and change-control structures modeled after SOC 2 trust service criteria.
+                  We configure cookie consent compliance scripts, secure intake forms, and user-data access controls to support privacy mandates.
                 </p>
-                <span className={styles.postureBadge}>Verification Pending</span>
+                <span className={styles.postureBadge}>Implementation Ready</span>
               </div>
             </div>
 
             <div className={styles.legalDisclaimer}>
               <blockquote>
-                <strong>[!] Compliance Verification Note:</strong> KOOLIXA provides technical coordination, configuration auditing, and vulnerability support. It is the responsibility of the client organization to secure formal certifications. We align our co-managed support to aid in your compliance roadmap.
+                <strong>[!] Compliance & Certification Notice:</strong> KOOLIXA engineers secure, hardened web platforms. However, formal SOC 2, HIPAA, or ISO certifications are corporate-level audits that must be obtained directly by your organization. We configure your web presence to align with these audit frameworks.
               </blockquote>
             </div>
           </div>
@@ -87,10 +87,10 @@ export default function TrustPage() {
         <section className={styles.reportSection}>
           <h2>Reporting a Vulnerability</h2>
           <p>
-            Security is a continuous collaborative effort. If you discover a vulnerability or potential exposure in our code or partner platforms, please report it immediately to our security coordination desk.
+            If you identify a security issue, exposed credential, or configuration flaw on a site engineered or managed by KOOLIXA, please notify us immediately.
           </p>
-          <Link href="/contact?focus=cybersecurity" className={styles.reportBtn}>
-            File Secure Report
+          <Link href="/contact?focus=security-issue" className={styles.reportBtn}>
+            Submit Security Alert
           </Link>
         </section>
       </div>

@@ -4,27 +4,27 @@ import { Metadata } from 'next';
 import styles from '../service-single.module.css';
 
 export const metadata: Metadata = {
-  title: 'Technical Project Delivery & Coordination',
-  description: 'Bridging client goals and developer tasks. Precise scope audits, milestone monitoring, risk reports, and structured communications.',
+  title: 'Website Technical Scoping & Project Launch Delivery',
+  description: 'Guiding B2B web projects from design layouts to production launch. Scoping audits, sprint execution, and Vercel hosting setup.',
 };
 
 export default function ProjectDeliveryPage() {
   const features = [
     {
-      title: 'Detailed Project Scope Auditing',
-      desc: 'We map out exact deliverables, clarify technical requirements, and define concrete metrics for completion, avoiding scope creep and unexpected overages.',
+      title: 'Technical Requirements Scoping',
+      desc: 'We map out the exact site navigation structures, database parameters, API integrations, and feature specifications, eliminating scope creep.',
     },
     {
-      title: 'Milestone Tracking & Execution',
-      desc: 'Maintaining development momentum via daily stand-ups, backlog grooming, and weekly sprint reviews. We ensure timelines are realistic and strictly hit.',
+      title: 'Sprint Tracking & Milestone Management',
+      desc: 'Monitoring development momentum using sprint backlogs. We make sure website construction milestones and launch target dates are met.',
     },
     {
-      title: 'Translation of Technical Requirements',
-      desc: 'We translate complex code architecture decisions into business value for stakeholders, and convert stakeholder goals into actionable developer tasks.',
+      title: 'Clear Developer-Stakeholder Bridge',
+      desc: 'We translate complex coding choices into clear business value for you, and convert your business feedback into clear tasks for our developers.',
     },
     {
-      title: 'Resource Allocation & Risk Reports',
-      desc: 'Proactively identifying technical bottlenecks, monitoring resource availability, and generating weekly status updates to keep all parties aligned.',
+      title: 'Staging Environments & Launch Operations',
+      desc: 'Configuring preview pipelines in Vercel to inspect site builds, audit accessibility, and run form checks before launching live.',
     },
   ];
 
@@ -41,10 +41,10 @@ export default function ProjectDeliveryPage() {
         {/* Hero Area */}
         <section className={styles.heroSection}>
           <div className={styles.heroContent}>
-            <span className={`${styles.serviceBadge} ${styles.pmBadge}`}>Coordination Core</span>
-            <h1 className={styles.title}>Project Delivery & Technical Coordination</h1>
+            <span className={`${styles.serviceBadge} ${styles.pmBadge}`}>Project Core</span>
+            <h1 className={styles.title}>Technical Scoping & Project Launch Delivery</h1>
             <p className={styles.subtitle}>
-              Keep development on schedule and secure with precise milestone planning, developer-to-client translations, and transparent status updates.
+              Keep your website build on schedule, structured, and aligned. We coordinate specifications, coding tasks, and DNS redirects for launch.
             </p>
           </div>
         </section>
@@ -53,12 +53,12 @@ export default function ProjectDeliveryPage() {
         <div className={styles.mainGrid}>
           {/* Detailed Description */}
           <div className={styles.detailsContent}>
-            <h2>Bridging Complexity and Execution</h2>
+            <h2>Bridging Concept and Launch Execution</h2>
             <p>
-              IT and engineering projects fail when communications break down. Developers require clear specifications, while business stakeholders need transparency, predictable budgets, and on-time milestones.
+              Website projects fail when specifications are vague. Developers need precise feature tasks, while business owners require absolute transparency on launch dates and milestones.
             </p>
             <p>
-              KOOLIXA bridges this gap. Our coordinators scoping, plan, and monitor every phase of your project. We manage technical dependencies and address bottlenecks before they cause delays.
+              KOOLIXA guides your project with care. We scoping, organize, and monitor every phase of your website project, coordinating Vercel hosting paths for a smooth launch.
             </p>
 
             <div className={styles.featuresList}>
@@ -74,19 +74,19 @@ export default function ProjectDeliveryPage() {
           {/* Sidebar Info */}
           <div className={styles.sidebar}>
             <div className={styles.sideCard}>
-              <h3>Coordination Metrics</h3>
+              <h3>Project Management Metrics</h3>
               <ul className={styles.metricsList}>
                 <li>
                   <strong>100%</strong>
-                  <span>Transparent Weekly Project Reports</span>
+                  <span>Transparent Weekly Progress Reports</span>
                 </li>
                 <li>
                   <strong>On Time</strong>
-                  <span>Milestone Delivery Commitment</span>
+                  <span>Milestone Launch Commitment</span>
                 </li>
                 <li>
-                  <strong>Agile / Scrum</strong>
-                  <span>Industry-Standard Management Alignment</span>
+                  <strong>Vercel Staging</strong>
+                  <span>Instant Deployment Previews Enforced</span>
                 </li>
               </ul>
             </div>
@@ -94,10 +94,10 @@ export default function ProjectDeliveryPage() {
             <div className={styles.sideCard}>
               <h3>Aligned Roles</h3>
               <p className={styles.roleDesc}>
-                This capability is run by our internal **Project Managers**, backed by **Operations Leadership**, and verified by client status updates.
+                This capability is run by our internal **Project Managers**, backed by **Operations Leadership**, and coordinated with **Web Developers**.
               </p>
               <Link href="/contact" className={styles.sideCta}>
-                Scoping Your Next Project
+                Scoping Your Website Project
               </Link>
             </div>
           </div>

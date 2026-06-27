@@ -4,27 +4,27 @@ import { Metadata } from 'next';
 import styles from '../service-single.module.css';
 
 export const metadata: Metadata = {
-  title: 'Managed IT Support & Help Desk Administration',
-  description: 'Enterprise-grade Tier 1-3 user support, workstation patching, remote configurations, and identity administration for growing organizations.',
+  title: 'Continuous Website Maintenance & Web Operations Support',
+  description: 'Ongoing website content updates, DNS records management, domain setups, and Google Workspace email configurations.',
 };
 
 export default function ManagedItPage() {
   const features = [
     {
-      title: 'User Lifecycle & Directory Management',
-      desc: 'Automated provisioning and de-provisioning of employee identities in Active Directory, Entra ID (Azure AD), Google Workspace, and Microsoft 365, aligned with standard onboarding workflows.',
+      title: 'SLA-Backed Content & Layout Edits',
+      desc: 'Need a text change, a new promotional page, or a layout adjustment? Send a ticket to our maintenance desk, and our engineers resolve it in minutes.',
     },
     {
-      title: 'Responsive Tier 1-3 Support Desk',
-      desc: 'Rapid-resolution help desk ticketing. We resolve account lockouts, software glitches, driver incompatibilities, and peripheral configurations, keeping staff productive.',
+      title: 'DNS Records & Domain Setup',
+      desc: 'We map custom domains, configure CNAME redirects, and enforce SPF, DKIM, and DMARC settings to secure email delivery and stop spoofing.',
     },
     {
-      title: 'Remote Monitoring & Patch Management',
-      desc: 'Continuous tracking of system resources, automated security patch deployments, disk health monitoring, and system upgrades scheduled outside peak work hours.',
+      title: 'Business Email Configuration',
+      desc: 'Setup and administration of corporate email networks using Google Workspace or Microsoft 365, aligned with employee onboarding parameters.',
     },
     {
-      title: 'Peripheral & Device Configuration',
-      desc: 'Hassle-free setup of networks, VPN endpoints, local printers, video conference equipment, and mobile devices with security profile alignments.',
+      title: 'Hosting & Serverless Monitoring',
+      desc: 'Continuous oversight of hosting metrics, database limits, third-party API keys, and deployment configs to ensure your site is always operational.',
     },
   ];
 
@@ -35,16 +35,16 @@ export default function ManagedItPage() {
         <div className={styles.breadcrumb}>
           <Link href="/services">Services</Link>
           <span>/</span>
-          <span className={styles.current}>Managed IT Support</span>
+          <span className={styles.current}>Maintenance & Operations</span>
         </div>
 
         {/* Hero Area */}
         <section className={styles.heroSection}>
           <div className={styles.heroContent}>
-            <span className={styles.serviceBadge}>Operational Excellence</span>
-            <h1 className={styles.title}>Managed IT Support & User Administration</h1>
+            <span className={`${styles.serviceBadge} ${styles.stabilityBadge}`}>Operations Core</span>
+            <h1 className={styles.title}>Continuous Maintenance & Web Operations</h1>
             <p className={styles.subtitle}>
-              Maximize organizational efficiency with a dedicated help desk, automated user provisioning, and remote system administration.
+              Keep your digital presence updated, online, and performing. We manage code updates, domain settings, and business email infrastructure.
             </p>
           </div>
         </section>
@@ -53,12 +53,12 @@ export default function ManagedItPage() {
         <div className={styles.mainGrid}>
           {/* Detailed Description */}
           <div className={styles.detailsContent}>
-            <h2>Proactive Infrastructure Management</h2>
+            <h2>Dedicated Support for Your Web Presence</h2>
             <p>
-              IT Support is more than resetting passwords. KOOLIXA builds structured workflows that ensure employee accounts, devices, and credentials are safe, operational, and properly managed.
+              Launching a website is only the first step. To continue driving business value, your platform needs text modifications, DNS security tweaks, and ongoing server monitoring.
             </p>
             <p>
-              By outsourcing first-line support to KOOLIXA, your team receives direct assistance with a guaranteed SLA, eliminating operational bottlenecks.
+              Instead of paying expensive hourly agency fees for basic fixes, KOOLIXA provides a dedicated maintenance desk with guaranteed SLA response times to handle your requests.
             </p>
 
             <div className={styles.featuresList}>
@@ -74,19 +74,19 @@ export default function ManagedItPage() {
           {/* Sidebar Info */}
           <div className={styles.sidebar}>
             <div className={styles.sideCard}>
-              <h3>Key Service Metrics</h3>
+              <h3>Operations Statistics</h3>
               <ul className={styles.metricsList}>
                 <li>
                   <strong>&lt; 14 Minutes</strong>
-                  <span>Average Help Desk Response Time</span>
+                  <span>Average Support Ticket Response</span>
                 </li>
                 <li>
-                  <strong>24 / 7 / 365</strong>
-                  <span>Emergency Ticket Escalation</span>
+                  <strong>100%</strong>
+                  <span>DNS & Email Security Compliance</span>
                 </li>
                 <li>
-                  <strong>98.4%</strong>
-                  <span>Client Satisfaction (CSAT) Score</span>
+                  <strong>99.9%</strong>
+                  <span>Uptime Guarantee SLA</span>
                 </li>
               </ul>
             </div>
@@ -94,7 +94,7 @@ export default function ManagedItPage() {
             <div className={styles.sideCard}>
               <h3>Aligned Roles</h3>
               <p className={styles.roleDesc}>
-                This service is backed by our internal **IT Support Technicians**, managed by senior **Operations Leadership** and audited by **QA managers**.
+                This service is backed by our **IT Support Technicians**, managed by **Operations Leadership**, and verified by **Web Developers**.
               </p>
               <Link href="/contact" className={styles.sideCta}>
                 Speak with a Lead Technician

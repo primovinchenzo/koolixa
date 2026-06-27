@@ -4,55 +4,55 @@ import { Metadata } from 'next';
 import styles from './why-koolixa.module.css';
 
 export const metadata: Metadata = {
-  title: 'Why Choose KOOLIXA | SLAs & Differentiators',
-  description: 'Learn why businesses trust KOOLIXA. Proactive vulnerability audits, guaranteed support response times, and validated backup restoration drills.',
+  title: 'Why Choose KOOLIXA | Differentiators & SLAs',
+  description: 'Understand the KOOLIXA difference: we construct premium websites, secure them from cyber threats, and provide continuous support and maintenance.',
 };
 
 export default function WhyKoolixaPage() {
   const differentiators = [
     {
-      title: 'Proactive Hardening vs. Reactive Repair',
-      desc: 'Traditional MSPs wait for systems to break before fixing them. KOOLIXA runs scheduled vulnerability audits and stability checking scripts to contain issues before they disrupt operations.',
+      title: 'Full Lifecycle Partnership vs. Build & Abandon',
+      desc: 'Most web design agencies build a site, hand over the files, and walk away. When things break or need updates, you are left stranded. KOOLIXA provides ongoing maintenance, code updates, and operations support.',
     },
     {
-      title: 'Guaranteed SLAs vs. Best-Effort Queues',
-      desc: 'Our contract guarantees help desk response times. We maintain an average first-touch resolution SLA of under 14 minutes, supported by certified technicians.',
+      title: 'Built-in Cybersecurity vs. Insecure Templates',
+      desc: 'Standard template sites are prime targets for hackers. KOOLIXA builds custom, high-speed code architectures and hardens them with active firewalls, SSL settings, and daily vulnerability scans.',
     },
     {
-      title: 'Monthly Verification vs. Blind Backup Trust',
-      desc: 'Many providers configure backups and never check them. KOOLIXA executes monthly disaster recovery restores in isolated environments to confirm rollback readiness.',
+      title: 'Guaranteed SLAs vs. Slow Agency Response',
+      desc: 'Need a text change, a new landing page, or a DNS record fix? We stand by our contracts with a guaranteed support response SLA of under 14 minutes average, keeping your digital storefront open.',
     },
   ];
 
   const comparison = [
     {
-      feature: 'Help Desk Response Time',
-      koolixa: 'SLA Guaranteed (<14 mins average)',
-      competitor: 'Best-effort (often 4–24 hours)',
+      feature: 'Website Code Architecture',
+      koolixa: 'Custom, high-speed Next.js & TypeScript',
+      competitor: 'Heavy, slow website builder templates',
       highlight: true,
     },
     {
-      feature: 'Vulnerability Management',
-      koolixa: 'Continuous internal/external scanning',
-      competitor: 'Yearly or none (reactive patching)',
+      feature: 'Website Cybersecurity',
+      koolixa: 'WAF firewalls & daily vulnerability scanning',
+      competitor: 'None (often left open to exploits)',
       highlight: true,
     },
     {
-      feature: 'Backup Verifications',
+      feature: 'Long-term Maintenance Support',
+      koolixa: 'SLA-backed help desk (<14 mins response)',
+      competitor: 'Hourly consulting (slow to schedule)',
+      highlight: true,
+    },
+    {
+      feature: 'Backup & Recovery Auditing',
       koolixa: 'Monthly restoration sandbox drills',
-      competitor: 'Verification email check only',
-      highlight: true,
-    },
-    {
-      feature: 'Project Scoping & Management',
-      koolixa: 'Dedicated PMs, weekly status reports',
-      competitor: 'Ad-hoc tech-led execution',
+      competitor: 'Verification email checks only',
       highlight: false,
     },
     {
-      feature: 'Technical Team Vetting',
-      koolixa: '100% background verified & certified',
-      competitor: 'Outsourced lower-tier help desk',
+      feature: 'Email & Workspace Integration',
+      koolixa: 'DKIM/SPF security & user lifecycle setups',
+      competitor: 'Left to client to configure',
       highlight: false,
     },
   ];
@@ -63,9 +63,9 @@ export default function WhyKoolixaPage() {
         {/* Header */}
         <section className={styles.header}>
           <span className={styles.badge}>The KOOLIXA Advantage</span>
-          <h1 className={styles.title}>Engineered for Continuous Operations</h1>
+          <h1 className={styles.title}>The Dedicated Web Operations Desk</h1>
           <p className={styles.subtitle}>
-            We design security and IT operations around predictability. Discover why mid-market enterprises select KOOLIXA.
+            A website is a living B2B platform. Discover why companies choose KOOLIXA to design, construct, protect, and maintain their digital assets.
           </p>
         </section>
 
@@ -86,7 +86,7 @@ export default function WhyKoolixaPage() {
         <section className={styles.compareSection}>
           <h2 className={styles.sectionTitle}>How We Compare</h2>
           <p className={styles.sectionSubtitle}>
-            A side-by-side comparison of KOOLIXA systems coordination versus standard IT service models.
+            A side-by-side comparison of KOOLIXA’s comprehensive web operations model versus traditional web design agencies.
           </p>
 
           <div className={styles.tableWrapper}>
@@ -94,8 +94,8 @@ export default function WhyKoolixaPage() {
               <thead>
                 <tr>
                   <th className={styles.colHeader}>Capability / Feature</th>
-                  <th className={`${styles.colHeader} ${styles.koolixaHeader}`}>KOOLIXA Approach</th>
-                  <th className={styles.colHeader}>Standard IT Provider</th>
+                  <th className={`${styles.colHeader} ${styles.koolixaHeader}`}>KOOLIXA Web Operations</th>
+                  <th className={styles.colHeader}>Traditional Web Agency</th>
                 </tr>
               </thead>
               <tbody>
@@ -116,9 +116,9 @@ export default function WhyKoolixaPage() {
         {/* Bottom SLA Callout */}
         <section className={styles.slaCallout}>
           <div className={styles.slaContent}>
-            <h2>Backed by SLA Commitments</h2>
+            <h2>Full-Lifecycle Web Support</h2>
             <p>
-              We stand by our uptime guarantees and ticket response times. Our agreements clearly outline accountability metrics, ensuring your business stays online.
+              We back our support response times and system uptime with concrete SLA contracts. Let us handle coding, security settings, and backups so your company can grow.
             </p>
             <div className={styles.slaStats}>
               <div className={styles.slaStat}>

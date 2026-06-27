@@ -31,7 +31,7 @@ export default function Chatbox() {
       {
         id: 'welcome',
         sender: 'bot',
-        text: 'System online. I am the KOOLIXA Operations Assistant. How can I help you with IT support, cybersecurity logs, or backup stability today?',
+        text: 'System online. I am the KOOLIXA Web Operations Assistant. How can I help you with custom Next.js website design, security firewalls, or uptime maintenance today?',
         timestamp: new Date(),
       },
     ]);
@@ -77,24 +77,24 @@ export default function Chatbox() {
   const getBotResponse = (query: string): string => {
     const text = query.toLowerCase();
     
-    if (text.includes('uptime') || text.includes('status') || text.includes('online') || text.includes('down')) {
-      return 'KOOLIXA Network operations are currently nominal. Average system uptime across our client base stands at 99.99%. Off-site rolling backups were validated at 03:15 UTC today.';
+    if (text.includes('uptime') || text.includes('status') || text.includes('online') || text.includes('down') || text.includes('hosting')) {
+      return 'KOOLIXA manages high-availability web hosting. Average system uptime across our client websites stands at 99.99%. Custom rollbacks and backup replicates are monitored 24/7.';
     }
     
-    if (text.includes('sla') || text.includes('response') || text.includes('time') || text.includes('speed')) {
-      return 'We guarantee an average first-touch ticket response SLA of under 14 minutes for all active IT support clients. Technical assessments are processed within 2 hours.';
+    if (text.includes('sla') || text.includes('response') || text.includes('time') || text.includes('speed') || text.includes('edit') || text.includes('update')) {
+      return 'We guarantee a support response SLA of under 14 minutes for all site maintenance clients. Our engineers handle content adjustments, DNS edits, and layout changes.';
     }
 
-    if (text.includes('price') || text.includes('cost') || text.includes('quote') || text.includes('hire')) {
-      return 'KOOLIXA structures custom monthly retainer SLAs based on active users and audit levels. You can use the "Open Ticket" option here to get a quick quote draft.';
+    if (text.includes('price') || text.includes('cost') || text.includes('quote') || text.includes('proposal') || text.includes('build') || text.includes('design')) {
+      return 'KOOLIXA scopes website projects based on size and database features, and ongoing maintenance retainers. You can submit an inline ticket here to receive a proposal draft forwarded to vinnybusiness13@gmail.com.';
     }
 
-    if (text.includes('incident') || text.includes('attack') || text.includes('hack') || text.includes('alert')) {
-      return 'If you are experiencing a cybersecurity incident, please click "Open Ticket" immediately. Our analysts will flag it to our 24/7 co-managed security desk for isolation.';
+    if (text.includes('incident') || text.includes('attack') || text.includes('hack') || text.includes('security') || text.includes('spam')) {
+      return 'We secure websites using Web Application Firewalls (WAF) and SSL encryption rules. For security audits or incident checks, please click "Open Support Ticket" below.';
     }
 
     // Default trigger to suggest opening a ticket
-    return 'For custom requests or immediate technical help, please click "Open Support Ticket" below. This flags our desk and forwards a ticket copy directly to vinnybusiness13@gmail.com.';
+    return 'For custom site builds, speed optimization reviews, or ticket logs, please click "Open Support Ticket". This forwards details directly to vinnybusiness13@gmail.com.';
   };
 
   const handleTicketSubmit = async (e: React.FormEvent) => {
@@ -108,7 +108,7 @@ export default function Chatbox() {
     }
 
     if (!ticketMessage.trim() || ticketMessage.length < 5) {
-      setTicketError('Please enter a brief description of the issue.');
+      setTicketError('Please enter a brief description of your request.');
       return;
     }
 
@@ -134,7 +134,7 @@ export default function Chatbox() {
           {
             id: Math.random().toString(),
             sender: 'bot',
-            text: `Ticket generated successfully. A confirmation has been forwarded to ${ticketEmail} and our operations desk at vinnybusiness13@gmail.com. Expected response is under 14 minutes.`,
+            text: `Web operations ticket generated. A confirmation copy has been sent to ${ticketEmail} and our engineering lead at vinnybusiness13@gmail.com. Expected response: <14 minutes.`,
             timestamp: new Date(),
           },
         ]);
@@ -176,14 +176,14 @@ export default function Chatbox() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className={styles.chatWindow} role="dialog" aria-label="Tech Support AI Console">
+        <div className={styles.chatWindow} role="dialog" aria-label="Web Support AI Console">
           {/* Header */}
           <div className={styles.header}>
             <div className={styles.botProfile}>
               <span className={styles.pulseDot}></span>
               <div>
                 <h4>KOOLIXA AI Assistant</h4>
-                <p>Uptime Operations Desk</p>
+                <p>Web Operations Desk</p>
               </div>
             </div>
           </div>
@@ -211,7 +211,7 @@ export default function Chatbox() {
             {/* Inline Ticket Intake Form */}
             {showTicketForm && (
               <div className={styles.ticketFormBox}>
-                <h5>Open Priority Support Ticket</h5>
+                <h5>Open Priority Web Ticket</h5>
                 <form onSubmit={handleTicketSubmit} className={styles.ticketForm}>
                   {ticketError && <span className={styles.formError}>{ticketError}</span>}
                   
@@ -226,7 +226,7 @@ export default function Chatbox() {
                   />
                   
                   <textarea
-                    placeholder="Briefly describe the issue..."
+                    placeholder="Describe your site requirements or issue..."
                     value={ticketMessage}
                     onChange={(e) => setTicketMessage(e.target.value)}
                     required
@@ -281,7 +281,7 @@ export default function Chatbox() {
                         {
                           id: Math.random().toString(),
                           sender: 'bot',
-                          text: 'KOOLIXA Network operations are currently nominal. Average system uptime across our client base stands at 99.99%. Off-site rolling backups were validated at 03:15 UTC today.',
+                          text: 'KOOLIXA Network operations are currently nominal. Average system uptime across our client websites stands at 99.99%. Custom rollbacks and backup replicates are monitored 24/7.',
                           timestamp: new Date(),
                         },
                       ]);
