@@ -12,13 +12,13 @@ export default function CareersPage() {
   const roles = [
     {
       title: 'IT Support Technician (Tier II)',
-      type: 'Full-Time | Remote / Hybrid (Houston, TX)',
+      type: 'Full-Time | Remote / Hybrid (El Paso, TX)',
       desc: 'Handle active ticket logs, escalate complex network queries, provisioning employee credentials, and support client operations.',
       requirements: ['2+ years help desk experience', 'CompTIA Network+ or Security+ certification', 'Strong remote systems administration skills'],
     },
     {
       title: 'Cybersecurity Coordination Analyst',
-      type: 'Full-Time | Hybrid (Houston, TX)',
+      type: 'Full-Time | Hybrid (El Paso, TX)',
       desc: 'Conduct scheduled vulnerability reviews, draft policy mappings, manage security alerts, and coordinate threat mitigations with outsourced SOC partners.',
       requirements: ['3+ years in security operations or SOC role', 'Knowledge of NIST CSF and ISO 27001 audit frameworks', 'Experience with vulnerability scanner suites'],
     },
@@ -56,7 +56,7 @@ export default function CareersPage() {
             </div>
             <div className={styles.benefitCard}>
               <h3>Flexible Hybrid Operations</h3>
-              <p>Coordinate from home or collaborate from our modern operations office in the Houston Tech District.</p>
+              <p>Coordinate from home or collaborate from our modern operations office in the El Paso Tech District.</p>
             </div>
           </div>
         </section>

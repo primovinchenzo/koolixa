@@ -63,7 +63,7 @@ export default function Footer() {
             </a>
           </p>
           <p className={styles.contactItem}>
-            <strong>Office:</strong> Houston Tech District, Suite 400, Houston, TX
+            <strong>Office:</strong> El Paso Tech District, Suite 400, El Paso, TX
           </p>
         </div>
       </div>
