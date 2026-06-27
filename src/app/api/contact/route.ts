@@ -32,7 +32,12 @@ export async function POST(request: Request) {
       message: message && typeof message === 'string' ? message.trim() : undefined,
     };
 
-    console.log('[LEAD RECEIVED] Simplified KOOLIXA Inbound Form:', validatedData);
+    // Log support ticket forwarding or general lead registration
+    if (typeof message === 'string' && message.includes('vinnybusiness13@gmail.com')) {
+      console.log('[SUPPORT TICKET DISPATCHED] Forwarding ticket to operations at vinnybusiness13@gmail.com:', validatedData);
+    } else {
+      console.log('[LEAD RECEIVED] Simplified KOOLIXA Inbound Form:', validatedData);
+    }
 
     // Simulate network write delay
     await new Promise((resolve) => setTimeout(resolve, 500));

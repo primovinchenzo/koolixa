@@ -1,0 +1,323 @@
+.widgetContainer {
+  position: fixed;
+  bottom: var(--space-md);
+  right: var(--space-md);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-sm);
+  font-family: var(--font-sans);
+}
+
+@media (min-width: 768px) {
+  .widgetContainer {
+    bottom: var(--space-xl);
+    right: var(--space-xl);
+  }
+}
+
+/* Toggle Trigger Button */
+.toggleBtn {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  background-color: var(--accent-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.toggleBtn:hover {
+  background-color: hsl(217, 91%, 65%);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-glow-blue);
+}
+
+.toggleBtn svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Chat Window Shell */
+.chatWindow {
+  width: calc(100vw - 2rem);
+  max-width: 380px;
+  height: 480px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg), var(--shadow-glow-blue);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: var(--transition-normal);
+}
+
+/* Header */
+.header {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--space-md);
+}
+
+.botProfile {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.pulseDot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent-emerald);
+  border-radius: var(--radius-full);
+  display: inline-block;
+  box-shadow: 0 0 8px var(--accent-emerald);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(0.95); }
+}
+
+.botProfile h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: var(--text-primary);
+}
+
+.botProfile p {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+/* Message Scroll Area */
+.messagesBox {
+  flex-grow: 1;
+  padding: var(--space-md);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  background-color: var(--bg-primary);
+}
+
+.msgRow {
+  display: flex;
+  width: 100%;
+}
+
+.botRow {
+  justify-content: flex-start;
+}
+
+.userRow {
+  justify-content: flex-end;
+}
+
+.bubble {
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.botRow .bubble {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-bottom-left-radius: 2px;
+}
+
+.userRow .bubble {
+  background-color: var(--accent-blue);
+  color: white;
+  border-bottom-right-radius: 2px;
+}
+
+/* Typing Indicator Bubble */
+.typingBubble {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  height: 20px;
+}
+
+.typingBubble span {
+  width: 6px;
+  height: 6px;
+  background-color: var(--text-muted);
+  border-radius: var(--radius-full);
+  animation: typing 1.4s infinite ease-in-out both;
+}
+
+.typingBubble span:nth-child(1) { animation-delay: -0.32s; }
+.typingBubble span:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes typing {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1); }
+}
+
+/* Ticket intake form inside chatbox */
+.ticketFormBox {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.ticketFormBox h5 {
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+  color: var(--text-primary);
+}
+
+.ticketForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.formError {
+  font-size: 0.75rem;
+  color: var(--accent-rose);
+  font-weight: 600;
+}
+
+.ticketInput, .ticketTextarea {
+  width: 100%;
+  padding: 8px 12px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xs);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.ticketInput:focus, .ticketTextarea:focus {
+  outline: none;
+  border-color: var(--accent-cyan);
+}
+
+.ticketTextarea {
+  resize: none;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+}
+
+.cancelBtn, .submitBtn {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: var(--radius-xs);
+  transition: var(--transition-fast);
+}
+
+.cancelBtn {
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.cancelBtn:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.submitBtn {
+  background-color: var(--accent-blue);
+  color: white;
+}
+
+.submitBtn:hover {
+  background-color: hsl(217, 91%, 65%);
+}
+
+/* Footer & Inputs */
+.footer {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  padding: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.quickOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.quickBtn {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  border-radius: var(--radius-xs);
+  transition: var(--transition-fast);
+}
+
+.quickBtn:hover {
+  border-color: var(--accent-cyan);
+  color: var(--text-primary);
+}
+
+.inputForm {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.chatInput {
+  flex-grow: 1;
+  padding: 8px 12px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 0.88rem;
+  transition: var(--transition-fast);
+}
+
+.chatInput:focus {
+  outline: none;
+  border-color: var(--accent-cyan);
+}
+
+.sendBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background-color: var(--accent-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: var(--transition-fast);
+}
+
+.sendBtn:hover {
+  background-color: hsl(217, 91%, 65%);
+}

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Outfit } from 'next/font/google';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import Chatbox from '@/components/common/Chatbox';
 import './globals.css';
 
 // Modern B2B Typography Pairing
@@ -93,6 +94,7 @@ export default function RootLayout({
         <Header />
         <main style={{ marginTop: '75px' }}>{children}</main>
         <Footer />
+        <Chatbox />
       </body>
     </html>
   );
