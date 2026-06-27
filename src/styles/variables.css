@@ -29,46 +29,8 @@
   --container-max-width: 1280px;
 }
 
-/* Theme: Dark (Default) */
-:root, [data-theme="dark"] {
-  --bg-primary: hsl(222, 47%, 6%);
-  --bg-secondary: hsl(223, 47%, 10%);
-  --bg-tertiary: hsl(223, 47%, 14%);
-  --bg-card: hsl(223, 47%, 9%);
-  --bg-card-hover: hsl(223, 47%, 12%);
-  
-  --text-primary: hsl(210, 40%, 98%);
-  --text-secondary: hsl(215, 20%, 70%);
-  --text-muted: hsl(215, 12%, 48%);
-  
-  --border-color: hsl(223, 25%, 16%);
-  --border-hover: hsl(223, 25%, 26%);
-  --border-glow: hsla(180, 100%, 45%, 0.12);
-
-  /* Accents */
-  --accent-cyan: hsl(180, 100%, 45%);
-  --accent-cyan-rgb: 0, 255, 255;
-  --accent-blue: hsl(217, 91%, 60%);
-  --accent-blue-rgb: 59, 130, 246;
-  --accent-emerald: hsl(142, 70%, 45%);
-  --accent-emerald-rgb: 16, 185, 129;
-  --accent-amber: hsl(45, 93%, 47%);
-  --accent-rose: hsl(350, 89%, 60%);
-
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 4px 12px -1px rgba(0, 0, 0, 0.5), 0 2px 6px -1px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.6), 0 4px 12px -2px rgba(0, 0, 0, 0.4);
-  --shadow-glow: 0 0 25px hsla(180, 100%, 45%, 0.1);
-  --shadow-glow-blue: 0 0 25px hsla(217, 91%, 60%, 0.1);
-
-  /* Glassmorphism overlays */
-  --glass-bg: rgba(9, 13, 22, 0.75);
-  --glass-border: rgba(255, 255, 255, 0.05);
-}
-
-/* Theme: Light */
-[data-theme="light"] {
+/* Theme: Light (Default) */
+:root, [data-theme="light"] {
   --bg-primary: hsl(210, 40%, 98%);
   --bg-secondary: hsl(210, 30%, 94%);
   --bg-tertiary: hsl(210, 20%, 90%);
@@ -103,4 +65,42 @@
   /* Glassmorphism overlays */
   --glass-bg: rgba(248, 249, 250, 0.8);
   --glass-border: rgba(0, 0, 0, 0.06);
+}
+
+/* Theme: Dark */
+[data-theme="dark"] {
+  --bg-primary: hsl(222, 47%, 6%);
+  --bg-secondary: hsl(223, 47%, 10%);
+  --bg-tertiary: hsl(223, 47%, 14%);
+  --bg-card: hsl(223, 47%, 9%);
+  --bg-card-hover: hsl(223, 47%, 12%);
+  
+  --text-primary: hsl(210, 40%, 98%);
+  --text-secondary: hsl(215, 20%, 70%);
+  --text-muted: hsl(215, 12%, 48%);
+  
+  --border-color: hsl(223, 25%, 16%);
+  --border-hover: hsl(223, 25%, 26%);
+  --border-glow: hsla(180, 100%, 45%, 0.12);
+
+  /* Accents */
+  --accent-cyan: hsl(180, 100%, 45%);
+  --accent-cyan-rgb: 0, 255, 255;
+  --accent-blue: hsl(217, 91%, 60%);
+  --accent-blue-rgb: 59, 130, 246;
+  --accent-emerald: hsl(142, 70%, 45%);
+  --accent-emerald-rgb: 16, 185, 129;
+  --accent-amber: hsl(45, 93%, 47%);
+  --accent-rose: hsl(350, 89%, 60%);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px -1px rgba(0, 0, 0, 0.5), 0 2px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.6), 0 4px 12px -2px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 25px hsla(180, 100%, 45%, 0.1);
+  --shadow-glow-blue: 0 0 25px hsla(217, 91%, 60%, 0.1);
+
+  /* Glassmorphism overlays */
+  --glass-bg: rgba(9, 13, 22, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.05);
 }

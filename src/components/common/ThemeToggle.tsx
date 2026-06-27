@@ -4,13 +4,15 @@ import React, { useEffect, useState } from 'react';
 import styles from './ThemeToggle.module.css';
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+  const [theme, setTheme] = useState<'dark' | 'light'>('light');
 
   useEffect(() => {
     // Read theme from document attribute which was set by inline script
     const currentTheme = document.documentElement.getAttribute('data-theme') as 'dark' | 'light';
     if (currentTheme) {
       setTheme(currentTheme);
+    } else {
+      setTheme('light');
     }
   }, []);
 
