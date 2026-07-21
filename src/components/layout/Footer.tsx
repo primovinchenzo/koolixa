@@ -43,6 +43,7 @@ export default function Footer() {
             <li><Link href="/why-koolixa">Why Koolixa</Link></li>
             <li><Link href="/trust">Security & Trust</Link></li>
             <li><Link href="/careers">Join the Team</Link></li>
+            <li><Link href="/contributions">Project Contributions</Link></li>
             <li><Link href="/insights">Insights & News</Link></li>
           </ul>
         </div>

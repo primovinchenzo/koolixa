@@ -1,0 +1,193 @@
+import React from 'react';
+import Link from 'next/link';
+import { Metadata } from 'next';
+import styles from './contributions.module.css';
+
+export const metadata: Metadata = {
+  title: 'Project Contributions & Team Presentations',
+  description: 'Class project contributions and individual technical module presentations for the KOOLIXA web platform.',
+};
+
+export default function ContributionsPage() {
+  const contributors = [
+    {
+      name: 'Brandon Caballero',
+      role: 'Backup & Recovery Lead',
+      topic: 'Website Data Protection & Recovery Plan',
+      slug: 'brandon-caballero',
+      summary: 'A structured system for protecting website data by creating regular copies that can be restored when needed to keep websites running with zero data loss.',
+      highlights: [
+        'Automated daily full & hourly incremental backups',
+        'Multi-location on-site & cloud redundancy',
+        'Four-stage recovery process (Detect, Restore, Verify, Notify)',
+      ],
+    },
+  ];
+
+  return (
+    <div className={styles.container}>
+      <div className="container">
+        {/* Header */}
+        <section className={styles.header}>
+          <span className={styles.badge}>Academic Project Showcase</span>
+          <h1 className={styles.title}>Project Contributions & Presentations</h1>
+          <p className={styles.subtitle}>
+            Explore the individual technical modules, operational frameworks, and course presentations developed by our team members for the KOOLIXA web platform.
+          </p>
+        </section>
+
+        {/* Featured Contributor Modules */}
+        <section className={styles.modulesSection}>
+          <h2 className={styles.sectionTitle}>Team Member Modules</h2>
+          <div className={styles.grid}>
+            {contributors.map((person) => (
+              <div key={person.slug} className={styles.contributorCard}>
+                <div className={styles.cardHeader}>
+                  <div>
+                    <span className={styles.contributorName}>{person.name}</span>
+                    <span className={styles.contributorRole}>{person.role}</span>
+                  </div>
+                  <span className={styles.topicTag}>{person.topic}</span>
+                </div>
+
+                <p className={styles.summary}>{person.summary}</p>
+
+                <div className={styles.highlightsBox}>
+                  <strong>Key Components:</strong>
+                  <ul className={styles.highlightsList}>
+                    {person.highlights.map((item, idx) => (
+                      <li key={idx}>
+                        <svg
+                          className={styles.checkIcon}
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className={styles.cardFooter}>
+                  <Link href={`/contributions/${person.slug}`} className={styles.viewBtn}>
+                    View Full Presentation Module
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            ))}
+
+            {/* Placeholder slots for classmates */}
+            <div className={styles.placeholderCard}>
+              <div className={styles.placeholderIcon}>+</div>
+              <h3>Classmate Contribution Slot</h3>
+              <p>Reserved for upcoming team presentation modules and project component documentation.</p>
+              <span className={styles.placeholderTag}>Pending Submission</span>
+            </div>
+          </div>
+        </section>
+
+        {/* Inline Featured Presentation: Brandon Caballero */}
+        <section className={styles.featuredSection}>
+          <div className={styles.featuredHeader}>
+            <span className={styles.featuredBadge}>Featured Module Presentation</span>
+            <h2>Brandon Caballero: Backup & Recovery Plan</h2>
+          </div>
+
+          <div className={styles.presentationBox}>
+            <div className={styles.introBlock}>
+              <p className={styles.leadText}>
+                A backup plan is a structured system for protecting website data by creating regular copies that can be restored when needed to continue running a website.
+              </p>
+              <p>
+                The purpose and the importance of a backup plan is to protect against risks such as hardware failure, human error, cyberattacks, and natural disasters. It keeps user websites available and minimizes downtime when something goes wrong.
+              </p>
+            </div>
+
+            {/* Risks Banner */}
+            <div className={styles.alertBanner}>
+              <h3>⚠️ Risks You Can't Afford to Ignore</h3>
+              <p>
+                Over 60 percent of small businesses lose data because they lack proper backups. For a platform like ours where thousands of users depend on us to keep their websites running, the stakes are even higher. A single outage doesn't just cause downtime; it destroys user trust, and damages a company’s reputation.
+              </p>
+            </div>
+
+            {/* Grid of Strategy & Recovery */}
+            <div className={styles.twoColGrid}>
+              {/* Strategy */}
+              <div className={styles.infoCard}>
+                <h3>Our Backup Strategy</h3>
+                <ul className={styles.infoList}>
+                  <li>
+                    <strong>Automated Backups:</strong> Daily full backups and hourly incremental backups to capture all changes.
+                  </li>
+                  <li>
+                    <strong>Restore Points & Retention:</strong> Multiple backup versions retained for flexible rollback and recovery.
+                  </li>
+                  <li>
+                    <strong>Multi-Location Storage:</strong> On-site and cloud redundancy to ensure data is always accessible.
+                  </li>
+                  <li>
+                    <strong>Encryption & Security:</strong> All backup data encrypted and protected against unauthorized access.
+                  </li>
+                </ul>
+              </div>
+
+              {/* Recovery Process */}
+              <div className={styles.infoCard}>
+                <h3>Recovery Process</h3>
+                <ol className={styles.processList}>
+                  <li>
+                    <strong>Detect:</strong> Monitor for any failed backups, unusual changes, or other issues to begin backup recovery process.
+                  </li>
+                  <li>
+                    <strong>Restore:</strong> Recover the most recent clean backup from the correct source, prioritising the most important site data first.
+                  </li>
+                  <li>
+                    <strong>Verify:</strong> Check that links, pages, forms, and core features work correctly before going live.
+                  </li>
+                  <li>
+                    <strong>Notify Users:</strong> Keep users updated during the recovery process and send a final confirmation once everything is back to normal.
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            {/* Next Steps */}
+            <div className={styles.nextStepsBox}>
+              <h3>Next Steps & Contact</h3>
+              <ul>
+                <li>Ongoing monitoring and periodic testing of backups</li>
+                <li>Continuous improvement based on previous downtimes for our website</li>
+                <li>Reach out to our backup and recovery team with questions or feedback</li>
+              </ul>
+              <div className={styles.actionBtnRow}>
+                <Link href="/contributions/brandon-caballero" className={styles.dedicatedPageBtn}>
+                  Open Standalone Presentation View
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+}

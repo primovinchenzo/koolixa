@@ -35,6 +35,7 @@ export default function Header() {
     { name: 'Trust', path: '/trust' },
     { name: 'About', path: '/about' },
     { name: 'Careers', path: '/careers' },
+    { name: 'Project Contributions', path: '/contributions' },
   ];
 
   return (

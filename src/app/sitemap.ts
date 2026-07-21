@@ -16,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/trust',
     '/contact',
     '/careers',
+    '/contributions',
+    '/contributions/brandon-caballero',
     '/insights',
     '/insights/hardening-directory-environments',
     '/insights/understanding-co-managed-soc',
