@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/contributions/joel-bustamante',
     '/contributions/jacob-medrano',
     '/contributions/diego-salazar',
+    '/contributions/jesus-garcia-gabe-venegas',
     '/insights',
     '/insights/hardening-directory-environments',
     '/insights/understanding-co-managed-soc',

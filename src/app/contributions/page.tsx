@@ -106,6 +106,18 @@ export default function ContributionsPage() {
         '4-Step Diagnostic Flow (Listen & Ask → Run Tests → Identify → Route)',
       ],
     },
+    {
+      name: 'Jesus Garcia & Gabe Venegas',
+      role: 'Marketing & Location Strategy Leads',
+      topic: 'Marketing, Testimonials & HQ Site Location',
+      slug: 'jesus-garcia-gabe-venegas',
+      summary: 'Marketing framework introducing client testimonials, comprehensive FAQ accordion, official El Paso HQ site location (6006 N Mesa St., Suite 210), and newsletter subscription integration.',
+      highlights: [
+        'Official HQ Site Location: 6006 N Mesa St., Suite 210, El Paso, TX',
+        'Client Testimonials (Sarah M., David R., Emily T.) & 5-Star Reviews',
+        'Frequently Asked Questions (FAQ) & Newsletter Opt-In System',
+      ],
+    },
   ];
 
   return (
@@ -116,7 +128,7 @@ export default function ContributionsPage() {
           <span className={styles.badge}>Academic Project Showcase</span>
           <h1 className={styles.title}>Project Contributions & Presentations</h1>
           <p className={styles.subtitle}>
-            Explore the individual technical modules, operational frameworks, legal research, and course presentations developed by our team members for the KOOLIXA web platform.
+            Explore the individual technical modules, operational frameworks, legal research, marketing strategy, and course presentations developed by our team members for the KOOLIXA web platform.
           </p>
         </section>
 
@@ -375,6 +387,31 @@ export default function ContributionsPage() {
 
             <div className={styles.actionBtnRow}>
               <Link href="/contributions/diego-salazar" className={styles.dedicatedPageBtn}>
+                Open Standalone Presentation View →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Presentation 9: Jesus Garcia & Gabe Venegas */}
+        <section className={styles.featuredSection}>
+          <div className={styles.featuredHeader}>
+            <span className={styles.featuredBadge}>Featured Module Presentation</span>
+            <h2>Jesus Garcia & Gabe Venegas: Marketing & Location Strategy</h2>
+          </div>
+
+          <div className={styles.presentationBox}>
+            <div className={styles.introBlock}>
+              <p className={styles.leadText}>
+                Building client trust and market presence through customer testimonials, comprehensive FAQs, physical HQ location, and newsletter outreach.
+              </p>
+              <p>
+                Covers the official headquarters address (6006 N Mesa St., Suite 210, El Paso, TX), building photography, client review showcases, essential customer FAQs, and an integrated newsletter opt-in system.
+              </p>
+            </div>
+
+            <div className={styles.actionBtnRow}>
+              <Link href="/contributions/jesus-garcia-gabe-venegas" className={styles.dedicatedPageBtn}>
                 Open Standalone Presentation View →
               </Link>
             </div>

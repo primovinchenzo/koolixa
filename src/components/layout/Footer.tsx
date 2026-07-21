@@ -64,7 +64,7 @@ export default function Footer() {
             </a>
           </p>
           <p className={styles.contactItem}>
-            <strong>Office:</strong> El Paso Tech District, Suite 400, El Paso, TX
+            <strong>Office:</strong> 6006 N Mesa St., Suite 210, El Paso, TX
           </p>
         </div>
       </div>
