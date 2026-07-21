@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/contributions',
     '/contributions/brandon-caballero',
     '/contributions/erika-williams',
+    '/contributions/nicole-macias',
     '/insights',
     '/insights/hardening-directory-environments',
     '/insights/understanding-co-managed-soc',

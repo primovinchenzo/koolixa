@@ -34,6 +34,18 @@ export default function ContributionsPage() {
         'El Paso Zoning Compliance, Cyber Certifications & DPF Privacy',
       ],
     },
+    {
+      name: 'Nicole Macias',
+      role: 'Training & Development Lead',
+      topic: 'Business Employee Training Plan',
+      slug: 'nicole-macias',
+      summary: 'A 5-step strategic framework for identifying skill gaps, setting SMART success goals, structuring modular e-learning, resourcing tools, and measuring training ROI.',
+      highlights: [
+        'Step 1 & 2: Needs Assessment & SMART Goal Setting',
+        'Step 3 & 4: Multi-Format Delivery & Resource Gathering',
+        'Step 5: Post-Training Quizzes, Live Audits & Feedback Loops',
+      ],
+    },
   ];
 
   return (
@@ -254,6 +266,64 @@ export default function ContributionsPage() {
               <p>Explore complete filing links, fee structures, zoning PDFs, and cybersecurity certification guides on Erika's dedicated module page.</p>
               <div className={styles.actionBtnRow}>
                 <Link href="/contributions/erika-williams" className={styles.dedicatedPageBtn}>
+                  Open Standalone Presentation View
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Presentation 3: Nicole Macias */}
+        <section className={styles.featuredSection}>
+          <div className={styles.featuredHeader}>
+            <span className={styles.featuredBadge}>Featured Module Presentation</span>
+            <h2>Nicole Macias: Business Employee Training Plan</h2>
+          </div>
+
+          <div className={styles.presentationBox}>
+            <div className={styles.introBlock}>
+              <p className={styles.leadText}>
+                What is needed for a training plan in a business? A structured 5-step process transforms team skills, eliminates operational bottlenecks, and guarantees measurable ROI.
+              </p>
+              <p>
+                From initial problem identification to SMART goal definition, multi-format e-learning delivery, resource provisioning, and post-training evaluation, this framework equips businesses for sustainable growth.
+              </p>
+            </div>
+
+            <div className={styles.twoColGrid}>
+              <div className={styles.infoCard}>
+                <h3>Steps 1–3: Assessment & Delivery</h3>
+                <ul className={styles.infoList}>
+                  <li>
+                    <strong>Step 1 (Find Problem):</strong> Identify team struggles and specific skills needed before designing content.
+                  </li>
+                  <li>
+                    <strong>Step 2 (SMART Goals):</strong> Set specific metrics (e.g. "Handle returns under 3 mins using new software").
+                  </li>
+                  <li>
+                    <strong>Step 3 (Modular Formats):</strong> Combine e-learning, structured classrooms, hands-on practice, and peer shadowing.
+                  </li>
+                </ul>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Steps 4–5: Resources & Proof</h3>
+                <ul className={styles.infoList}>
+                  <li>
+                    <strong>Step 4 (Gather Tools):</strong> Provide workbooks, software logins, quiet work rooms, and dedicated learning time.
+                  </li>
+                  <li>
+                    <strong>Step 5 (Evaluate Success):</strong> Conduct quizzes, live task audits, long-term performance checks, and team feedback.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className={styles.nextStepsBox}>
+              <h3>Full 5-Step Framework & SMART Goal Guide</h3>
+              <p>Review Nicole's complete presentation breakdown and template structure on her dedicated module page.</p>
+              <div className={styles.actionBtnRow}>
+                <Link href="/contributions/nicole-macias" className={styles.dedicatedPageBtn}>
                   Open Standalone Presentation View
                 </Link>
               </div>
