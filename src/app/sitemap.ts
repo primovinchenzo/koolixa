@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/careers',
     '/contributions',
     '/contributions/brandon-caballero',
+    '/contributions/erika-williams',
     '/insights',
     '/insights/hardening-directory-environments',
     '/insights/understanding-co-managed-soc',

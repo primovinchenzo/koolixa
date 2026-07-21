@@ -22,6 +22,18 @@ export default function ContributionsPage() {
         'Four-stage recovery process (Detect, Restore, Verify, Notify)',
       ],
     },
+    {
+      name: 'Erika Williams',
+      role: 'Licensing & Compliance Lead',
+      topic: 'Licensing and Permits',
+      slug: 'erika-williams',
+      summary: 'Essential business registration (LLC & EIN), Texas sales tax permits, El Paso zoning laws, cybersecurity certifications, data privacy, and federal employment tax rules.',
+      highlights: [
+        'LLC & Texas Secretary of State DBA Registration ($300 fee)',
+        'IRS EIN & Texas Comptroller Sales Tax Permit Application',
+        'El Paso Zoning Compliance, Cyber Certifications & DPF Privacy',
+      ],
+    },
   ];
 
   return (
@@ -105,7 +117,7 @@ export default function ContributionsPage() {
           </div>
         </section>
 
-        {/* Inline Featured Presentation: Brandon Caballero */}
+        {/* Featured Presentation 1: Brandon Caballero */}
         <section className={styles.featuredSection}>
           <div className={styles.featuredHeader}>
             <span className={styles.featuredBadge}>Featured Module Presentation</span>
@@ -181,6 +193,67 @@ export default function ContributionsPage() {
               </ul>
               <div className={styles.actionBtnRow}>
                 <Link href="/contributions/brandon-caballero" className={styles.dedicatedPageBtn}>
+                  Open Standalone Presentation View
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Presentation 2: Erika Williams */}
+        <section className={styles.featuredSection}>
+          <div className={styles.featuredHeader}>
+            <span className={styles.featuredBadge}>Featured Module Presentation</span>
+            <h2>Erika Williams: Licensing and Permits</h2>
+          </div>
+
+          <div className={styles.presentationBox}>
+            <div className={styles.introBlock}>
+              <p className={styles.leadText}>
+                Establishing a legal and compliant IT business in Texas requires fulfilling federal, state, local zoning, and industry-specific licensing parameters.
+              </p>
+              <p>
+                From LLC registration with the Texas Secretary of State to Sales Tax permits with the Texas Comptroller and El Paso zoning regulations, maintaining full compliance safeguards business operations and client contracts.
+              </p>
+            </div>
+
+            <div className={styles.twoColGrid}>
+              <div className={styles.infoCard}>
+                <h3>1. Business Registration</h3>
+                <ul className={styles.infoList}>
+                  <li>
+                    <strong>LLC Structure:</strong> Shields personal assets from business liabilities. Formation costs range from $50–$1,000.
+                  </li>
+                  <li>
+                    <strong>State Filings (DBA):</strong> Registered with Texas Secretary of State ($300.00 filing fee).
+                  </li>
+                  <li>
+                    <strong>IRS EIN:</strong> Employer Identification Number from the IRS (Free online service).
+                  </li>
+                </ul>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>2. Sales Tax & Permits</h3>
+                <ul className={styles.infoList}>
+                  <li>
+                    <strong>Texas Sales Tax Permit:</strong> Required via Texas Comptroller for taxable IT goods and services (Free).
+                  </li>
+                  <li>
+                    <strong>El Paso Zoning Laws:</strong> Location compliance checked via El Paso Planning & Inspections.
+                  </li>
+                  <li>
+                    <strong>Data Privacy & FCC:</strong> Compliance under Data Privacy Framework (DPF), FTC, and FCC licensing rules.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className={styles.nextStepsBox}>
+              <h3>Full Licensing Documentation & Direct State Links</h3>
+              <p>Explore complete filing links, fee structures, zoning PDFs, and cybersecurity certification guides on Erika's dedicated module page.</p>
+              <div className={styles.actionBtnRow}>
+                <Link href="/contributions/erika-williams" className={styles.dedicatedPageBtn}>
                   Open Standalone Presentation View
                 </Link>
               </div>
