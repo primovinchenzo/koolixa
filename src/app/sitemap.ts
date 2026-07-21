@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/careers',
     '/contributions',
     '/contributions/vincent-centeno',
+    '/contributions/gabriel-gaytan',
     '/contributions/brandon-caballero',
     '/contributions/erika-williams',
     '/contributions/nicole-macias',

@@ -23,6 +23,18 @@ export default function ContributionsPage() {
       ],
     },
     {
+      name: 'Gabriel Gaytan III',
+      role: 'Antivirus & Product Design Lead',
+      topic: 'Antivirus Architecture & Product Design Analysis',
+      slug: 'gabriel-gaytan',
+      summary: 'Analysis of enterprise antivirus architecture patching Microsoft Defender gaps (Zero-Day, Web Phishing, Network Vectors) and a 5-stage B2B product design workflow for El Paso small businesses.',
+      highlights: [
+        'Custom Antivirus Engine (Patching Zero-Day, Phishing & Network Vectors)',
+        'OS Security Hardening & Client Infrastructure Protection',
+        '5-Stage Product Order of Operations (Research → Mockup → Outreach → Transaction → Final Build)',
+      ],
+    },
+    {
       name: 'Brandon Caballero',
       role: 'Backup & Recovery Lead',
       topic: 'Website Data Protection & Recovery Plan',
@@ -225,6 +237,31 @@ export default function ContributionsPage() {
             <div className={styles.actionBtnRow}>
               <Link href="/contributions/vincent-centeno" className={styles.dedicatedPageBtn}>
                 Open Standalone Lead Architect View →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Presentation 0.5: Gabriel Gaytan III */}
+        <section className={styles.featuredSection}>
+          <div className={styles.featuredHeader}>
+            <span className={styles.featuredBadge}>Featured Module Presentation</span>
+            <h2>Gabriel Gaytan III: Antivirus & Product Design Analysis</h2>
+          </div>
+
+          <div className={styles.presentationBox}>
+            <div className={styles.introBlock}>
+              <p className={styles.leadText}>
+                Enhancing infrastructure security by modeling custom antivirus technologies beyond standard OS software, while executing a 5-stage product design workflow for El Paso businesses.
+              </p>
+              <p>
+                Covers patching Microsoft Defender vulnerabilities (Zero-Day Threats, Web Phishing, Network Vectors), combined front-end and back-end web frameworks, and the 5-step order of operations (Research → Mockup → Outreach → Transaction → Final Product).
+              </p>
+            </div>
+
+            <div className={styles.actionBtnRow}>
+              <Link href="/contributions/gabriel-gaytan" className={styles.dedicatedPageBtn}>
+                Open Standalone Presentation View →
               </Link>
             </div>
           </div>
