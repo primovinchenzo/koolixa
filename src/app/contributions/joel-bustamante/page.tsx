@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 };
 
 export default function JoelBustamantePage() {
+  const complianceBullets = [
+    'Privacy compliance assessment and requirements mapping',
+    'GDPR, CCPA/CPRA, HIPAA, GLBA, and FERPA implementation guidance',
+    'Security controls aligned with ISO 27001, NIST, and SOC 2',
+    'Cookie consent, privacy policies, and user rights management',
+  ];
+
   const frameworks = [
     {
       name: 'General Data Protection Regulation (GDPR)',
@@ -94,6 +101,37 @@ export default function JoelBustamantePage() {
           <p className={styles.subtitle}>
             Protecting customer information and maintaining strong security practices are fundamental priorities at KOOLIXA. Explore regulatory frameworks and how they shape website engineering.
           </p>
+        </section>
+
+        {/* Highlighted Compliance Card (Matching Image) */}
+        <section className={styles.section}>
+          <div className={styles.complianceCard}>
+            <div className={styles.cardHeaderArea}>
+              <h2 className={styles.cardMainTitle}>Compliance Frameworks & Data Protection</h2>
+              <p className={styles.cardSubTitle}>Privacy, Security and Regulatory Compliance</p>
+            </div>
+
+            <div className={styles.cardSplitGrid}>
+              <div className={styles.cardLeftCol}>
+                <p className={styles.cardParagraph}>
+                  Helping your website meet industry privacy, security, and regulatory standards. We identify applicable compliance requirements and implement the technical, security, and privacy controls needed to protect customer data and support regulatory readiness.
+                </p>
+              </div>
+
+              <div className={styles.cardRightCol}>
+                <ul className={styles.bulletsList}>
+                  {complianceBullets.map((bullet, idx) => (
+                    <li key={idx} className={styles.bulletItem}>
+                      <svg className={styles.checkIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Regulatory Frameworks Grid */}

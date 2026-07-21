@@ -5,7 +5,7 @@ import styles from './services.module.css';
 
 export const metadata: Metadata = {
   title: 'Our Capabilities & Web Solutions',
-  description: 'Explore KOOLIXA capabilities including Custom Web Engineering, continuous maintenance, website security hardening, technical scoping, and backup redundancy.',
+  description: 'Explore KOOLIXA capabilities including Custom Web Engineering, continuous maintenance, website security hardening, compliance frameworks, technical scoping, and backup redundancy.',
 };
 
 export default function ServicesPage() {
@@ -34,6 +34,19 @@ export default function ServicesPage() {
         'SSL certificate setups and secure redirect rule definitions',
         'Daily, automated vulnerability and malware scans',
         'Compliance alignments for client-side privacy laws',
+      ],
+    },
+    {
+      id: 'compliance-frameworks',
+      title: 'Compliance Frameworks & Data Protection',
+      tagline: 'Privacy, Security and Regulatory Compliance',
+      desc: 'Helping your website meet industry privacy, security, and regulatory standards. We identify applicable compliance requirements and implement the technical, security, and privacy controls needed to protect customer data and support regulatory readiness.',
+      link: '/contributions/joel-bustamante',
+      points: [
+        'Privacy compliance assessment and requirements mapping',
+        'GDPR, CCPA/CPRA, HIPAA, GLBA, and FERPA implementation guidance',
+        'Security controls aligned with ISO 27001, NIST, and SOC 2',
+        'Cookie consent, privacy policies, and user rights management',
       ],
     },
     {
@@ -85,7 +98,7 @@ export default function ServicesPage() {
           <div className={styles.headerBox}>
             <h1 className={styles.title}>Capability & Service Offerings</h1>
             <p className={styles.subtitle}>
-              KOOLIXA provides end-to-end web presence operations. We construct your website, secure it against threats, and continuously manage upgrades and support.
+              KOOLIXA provides end-to-end web presence operations. We construct your website, secure it against threats, enforce data privacy regulations, and continuously manage upgrades and support.
             </p>
           </div>
         </div>
@@ -154,7 +167,7 @@ export default function ServicesPage() {
             <div className={styles.pricingContent}>
               <h2 className={styles.pricingTitle}>Tailored B2B Engagement Model</h2>
               <p className={styles.pricingText}>
-                We do not believe in one-size-fits-all pricing. KOOLIXA custom-scopes projects based on website size, dynamic database complexity, and ongoing maintenance SLA seat counts.
+                We do not believe in one-size-fits-all pricing. KOOLIXA custom-scopes projects based on website size, dynamic database complexity, compliance framework criteria, and ongoing maintenance SLA seat counts.
               </p>
               <div className={styles.pricingSteps}>
                 <div className={styles.stepItem}>
@@ -162,8 +175,8 @@ export default function ServicesPage() {
                   <p>We review your business targets and map layout mockups, technical structures, and feature requirements.</p>
                 </div>
                 <div className={styles.stepItem}>
-                  <strong>2. Custom Web Construction</strong>
-                  <p>We engineer your site from scratch using Next.js, optimizing speed profiles and securing credentials before launch.</p>
+                  <strong>2. Custom Web Construction & Compliance Hardening</strong>
+                  <p>We engineer your site from scratch using Next.js, optimizing speed profiles and enforcing regulatory privacy controls before launch.</p>
                 </div>
                 <div className={styles.stepItem}>
                   <strong>3. Operations & Maintenance SLA</strong>
