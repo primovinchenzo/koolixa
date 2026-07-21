@@ -1,6 +1,14 @@
 .container {
+  position: relative;
+  overflow: hidden;
   padding-top: var(--space-xl);
   padding-bottom: var(--space-xxxl);
+  min-height: 100vh;
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 2;
 }
 
 .breadcrumb {

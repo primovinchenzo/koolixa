@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import styles from './vincent.module.css';
+import MatrixRainCanvas from '@/components/common/MatrixRainCanvas';
 
 export const metadata: Metadata = {
   title: 'System Architecture & Lead Engineering | Vincent Centeno - Class Presentation',
@@ -52,7 +53,10 @@ export default function VincentCentenoPage() {
 
   return (
     <div className={styles.container}>
-      <div className="container">
+      {/* Hypnotic, Ambient Slow Matrix Code Rain Background */}
+      <MatrixRainCanvas isHovered={true} speed="slow" opacity={0.28} position="absolute" />
+
+      <div className={`container ${styles.contentWrapper}`}>
         {/* Breadcrumb */}
         <div className={styles.breadcrumb}>
           <Link href="/contributions">Contributions</Link>
@@ -81,7 +85,7 @@ export default function VincentCentenoPage() {
           </div>
         </section>
 
-        {/* Core Architectural Pillars */}
+        {/* Core Architectural Accomplishments */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Core Architectural Accomplishments</h2>
           <div className={styles.pillarsGrid}>
