@@ -82,6 +82,18 @@ export default function ContributionsPage() {
         '12 Website Implementation Pillars (Consent, Encryption, Audit Logs)',
       ],
     },
+    {
+      name: 'Jacob Medrano',
+      role: 'Operations Strategy Lead',
+      topic: 'Operations Playbook',
+      slug: 'jacob-medrano',
+      summary: 'Complete operational playbook detailing KOOLIXA’s mission statement, 9-stage delivery workflow, logical architecture, promotion paths (Dev → Staging → Prod), maintenance checklists, and observability metrics.',
+      highlights: [
+        '9-Stage Service Delivery Workflow (Consultation → Support)',
+        'Logical Architecture: Internet → DNS → WAF → App → DB → Backups',
+        'Promotion Paths (Dev → Staging → Prod) & Monitoring Matrices',
+      ],
+    },
   ];
 
   return (
@@ -308,6 +320,31 @@ export default function ContributionsPage() {
 
             <div className={styles.actionBtnRow}>
               <Link href="/contributions/joel-bustamante" className={styles.dedicatedPageBtn}>
+                Open Standalone Presentation View →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Presentation 7: Jacob Medrano */}
+        <section className={styles.featuredSection}>
+          <div className={styles.featuredHeader}>
+            <span className={styles.featuredBadge}>Featured Module Presentation</span>
+            <h2>Jacob Medrano: Operations Playbook</h2>
+          </div>
+
+          <div className={styles.presentationBox}>
+            <div className={styles.introBlock}>
+              <p className={styles.leadText}>
+                Delivering reliable, secure, and scalable website solutions through an end-to-end operational playbook.
+              </p>
+              <p>
+                Covers KOOLIXA's mission statement, 7 service responsibilities, 9-stage delivery workflow, cloud architecture (Internet → DNS → Load Balancer → Web → DB → Backups), Dev → Staging → Prod promotion, maintenance checklists, and monitoring matrices.
+              </p>
+            </div>
+
+            <div className={styles.actionBtnRow}>
+              <Link href="/contributions/jacob-medrano" className={styles.dedicatedPageBtn}>
                 Open Standalone Presentation View →
               </Link>
             </div>
