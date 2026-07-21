@@ -87,11 +87,23 @@ export default function ContributionsPage() {
       role: 'Operations Strategy Lead',
       topic: 'Operations Playbook',
       slug: 'jacob-medrano',
-      summary: 'Complete operational playbook detailing KOOLIXA’s mission statement, 9-stage delivery workflow, logical architecture, promotion paths (Dev → Staging → Prod), maintenance checklists, and observability metrics.',
+      summary: 'Complete operational playbook detailing KOOLIXA’s mission statement, 9-stage delivery workflow, logical architecture, promotion paths (Dev → Staging → Prod), maintenance checklists, and observability matrices.',
       highlights: [
         '9-Stage Service Delivery Workflow (Consultation → Support)',
         'Logical Architecture: Internet → DNS → WAF → App → DB → Backups',
         'Promotion Paths (Dev → Staging → Prod) & Monitoring Matrices',
+      ],
+    },
+    {
+      name: 'Diego Salazar',
+      role: 'Systems Diagnostics Specialist',
+      topic: 'Systems Diagnostics & Troubleshooting',
+      slug: 'diego-salazar',
+      summary: 'A methodical 4-step diagnostic workflow for examining hardware, software, networks, and security vulnerabilities before applying targeted technical fixes.',
+      highlights: [
+        'What Diagnostics Means (Hardware, Software, Networks & Security)',
+        'Why Diagnostics Matters (Time Savings, Root Cause & Avoid Guessing)',
+        '4-Step Diagnostic Flow (Listen & Ask → Run Tests → Identify → Route)',
       ],
     },
   ];
@@ -183,13 +195,6 @@ export default function ContributionsPage() {
               </p>
               <p>
                 The purpose and importance of a backup plan is to protect against hardware failure, human error, cyberattacks, and natural disasters. It keeps user websites available and minimizes downtime.
-              </p>
-            </div>
-
-            <div className={styles.alertBanner}>
-              <h3>⚠️ Risks You Can't Afford to Ignore</h3>
-              <p>
-                Over 60 percent of small businesses lose data because they lack proper backups. For a platform like ours where thousands of users depend on us to keep their websites running, the stakes are even higher.
               </p>
             </div>
 
@@ -345,6 +350,31 @@ export default function ContributionsPage() {
 
             <div className={styles.actionBtnRow}>
               <Link href="/contributions/jacob-medrano" className={styles.dedicatedPageBtn}>
+                Open Standalone Presentation View →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Presentation 8: Diego Salazar */}
+        <section className={styles.featuredSection}>
+          <div className={styles.featuredHeader}>
+            <span className={styles.featuredBadge}>Featured Module Presentation</span>
+            <h2>Diego Salazar: Systems Diagnostics & Troubleshooting</h2>
+          </div>
+
+          <div className={styles.presentationBox}>
+            <div className={styles.introBlock}>
+              <p className={styles.leadText}>
+                Methodical troubleshooting to diagnose tech issues accurately before rushing into any solution.
+              </p>
+              <p>
+                Covers what diagnostics means across computers, software, hardware, networks, and security issues; why the role saves time and avoids guessing; real-world diagnostic examples; and the 4-step workflow (Listen & Ask → Run Tests → Identify Problem → Report & Route).
+              </p>
+            </div>
+
+            <div className={styles.actionBtnRow}>
+              <Link href="/contributions/diego-salazar" className={styles.dedicatedPageBtn}>
                 Open Standalone Presentation View →
               </Link>
             </div>

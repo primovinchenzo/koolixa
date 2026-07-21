@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/contributions/ignacio-salcido',
     '/contributions/joel-bustamante',
     '/contributions/jacob-medrano',
+    '/contributions/diego-salazar',
     '/insights',
     '/insights/hardening-directory-environments',
     '/insights/understanding-co-managed-soc',
