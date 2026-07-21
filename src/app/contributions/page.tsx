@@ -12,7 +12,7 @@ export default function ContributionsPage() {
   const contributors = [
     {
       name: 'Vincent Centeno',
-      role: 'Project Founder & Lead AI Architect',
+      role: 'Founder and Lead Architect',
       topic: 'End-to-End System Architecture & Platform Engineering',
       slug: 'vincent-centeno',
       summary: 'Overall platform visionary and lead architect behind KOOLIXA. Engineered the complete Next.js 16 App Router foundation, responsive dark/light styling system, automated support pipeline, and unified all team technical contributions.',
@@ -220,7 +220,7 @@ export default function ContributionsPage() {
         {/* Featured Presentation 0: Vincent Centeno */}
         <section className={styles.featuredSection}>
           <div className={styles.featuredHeader}>
-            <span className={styles.featuredBadge}>Lead Project Architect</span>
+            <span className={styles.featuredBadge}>Founder and Lead Architect</span>
             <h2>Vincent Centeno: System Architecture & Platform Engineering</h2>
           </div>
 

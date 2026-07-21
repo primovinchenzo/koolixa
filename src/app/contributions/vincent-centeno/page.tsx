@@ -62,7 +62,7 @@ export default function VincentCentenoPage() {
 
         {/* Hero Area */}
         <section className={styles.heroSection}>
-          <span className={styles.authorBadge}>Project Founder & Lead AI Architect</span>
+          <span className={styles.authorBadge}>Founder and Lead Architect</span>
           <h1 className={styles.title}>Vincent Centeno</h1>
           <h2 className={styles.subtitleTitle}>System Architecture & Platform Engineering</h2>
           <p className={styles.subtitle}>
