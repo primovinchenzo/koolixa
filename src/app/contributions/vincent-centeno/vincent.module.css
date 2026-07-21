@@ -1,0 +1,328 @@
+.container {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xxxl);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: var(--space-xl);
+}
+
+.breadcrumb a {
+  transition: var(--transition-fast);
+}
+
+.breadcrumb a:hover {
+  color: var(--accent-cyan);
+}
+
+.current {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Hero Section */
+.heroSection {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--accent-blue);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  margin-bottom: var(--space-xxl);
+}
+
+@media (min-width: 768px) {
+  .heroSection {
+    padding: var(--space-xxl);
+  }
+}
+
+.authorBadge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--accent-cyan);
+  letter-spacing: 0.05em;
+  padding: 4px 14px;
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-md);
+}
+
+.title {
+  font-size: 2.8rem;
+  margin-bottom: 4px;
+}
+
+.subtitleTitle {
+  font-size: 1.5rem;
+  color: var(--accent-blue);
+  margin-bottom: var(--space-md);
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 840px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: var(--space-xxl);
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  margin-bottom: var(--space-xl);
+  font-family: var(--font-heading);
+}
+
+.cardBadge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Founder Card */
+.founderCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--accent-cyan);
+  padding: var(--space-xl);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.founderCard h2 {
+  font-size: 1.6rem;
+  margin-bottom: var(--space-md);
+}
+
+.founderText {
+  font-size: 1.2rem;
+  line-height: 1.65;
+  color: var(--text-primary);
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/* Pillars Grid */
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .pillarsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pillarCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: var(--space-xl);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  transition: var(--transition-fast);
+}
+
+.pillarCard:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: var(--shadow-glow);
+}
+
+.pillarNum {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+  background-color: hsla(180, 100%, 45%, 0.1);
+  padding: 2px 8px;
+  border-radius: var(--radius-xs);
+  display: inline-block;
+  margin-bottom: var(--space-xs);
+}
+
+.pillarCard h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-xs);
+  color: var(--text-primary);
+}
+
+.pillarCard p {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+/* Tech Card */
+.techCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: var(--space-xl);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.techCard h2 {
+  font-size: 1.6rem;
+  margin-bottom: var(--space-lg);
+}
+
+.techGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.techRow {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-xs);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+@media (min-width: 576px) {
+  .techRow {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.techCategory {
+  font-size: 0.95rem;
+  color: var(--accent-cyan);
+}
+
+.techVal {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Deliverables Card */
+.deliverablesCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: var(--space-xl);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.deliverablesCard h2 {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.delivSub {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.delivList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+}
+
+@media (min-width: 768px) {
+  .delivList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.delivList li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.checkIcon {
+  width: 18px;
+  height: 18px;
+  color: var(--accent-cyan);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Next Steps Card */
+.nextStepsCard {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: var(--space-xl);
+  border-radius: var(--radius-md);
+}
+
+.nextStepsCard h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-xs);
+}
+
+.nextStepsCard p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.btnRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.contactBtn {
+  padding: 0.85rem var(--space-xl);
+  background-color: var(--accent-blue);
+  color: white;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  transition: var(--transition-fast);
+}
+
+.contactBtn:hover {
+  background-color: hsl(217, 91%, 65%);
+  box-shadow: var(--shadow-glow-blue);
+  transform: translateY(-1px);
+}
+
+.backBtn {
+  padding: 0.85rem var(--space-xl);
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  transition: var(--transition-fast);
+}
+
+.backBtn:hover {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+}

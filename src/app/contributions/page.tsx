@@ -11,6 +11,18 @@ export const metadata: Metadata = {
 export default function ContributionsPage() {
   const contributors = [
     {
+      name: 'Vincent Centeno',
+      role: 'Project Founder & Lead AI Architect',
+      topic: 'End-to-End System Architecture & Platform Engineering',
+      slug: 'vincent-centeno',
+      summary: 'Overall platform visionary and lead architect behind KOOLIXA. Engineered the complete Next.js 16 App Router foundation, responsive dark/light styling system, automated support pipeline, and unified all team technical contributions.',
+      highlights: [
+        'Full-Stack Next.js 16 App Router Architecture & Design System',
+        'AI Tech Support Chatbox & Formspree Ticket Dispatching Engine',
+        'System Integration, Build Orchestration & Production Deployment',
+      ],
+    },
+    {
       name: 'Brandon Caballero',
       role: 'Backup & Recovery Lead',
       topic: 'Website Data Protection & Recovery Plan',
@@ -190,6 +202,31 @@ export default function ContributionsPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Featured Presentation 0: Vincent Centeno */}
+        <section className={styles.featuredSection}>
+          <div className={styles.featuredHeader}>
+            <span className={styles.featuredBadge}>Lead Project Architect</span>
+            <h2>Vincent Centeno: System Architecture & Platform Engineering</h2>
+          </div>
+
+          <div className={styles.presentationBox}>
+            <div className={styles.introBlock}>
+              <p className={styles.leadText}>
+                As Lead Architect and AI Pair Engineer, Vincent Centeno directed the technical vision, Next.js 16 full-stack implementation, UI design system, automated support routing, and integration of all team modules.
+              </p>
+              <p>
+                Engineered KOOLIXA into a production-grade web development platform tailored for companies seeking turnkey website creation, continuous maintenance, and enterprise-grade security.
+              </p>
+            </div>
+
+            <div className={styles.actionBtnRow}>
+              <Link href="/contributions/vincent-centeno" className={styles.dedicatedPageBtn}>
+                Open Standalone Lead Architect View →
+              </Link>
+            </div>
           </div>
         </section>
 
