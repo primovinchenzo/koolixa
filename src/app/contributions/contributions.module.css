@@ -59,6 +59,8 @@
 }
 
 .contributorCard {
+  position: relative;
+  overflow: hidden;
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   padding: var(--space-xl);
@@ -76,6 +78,8 @@
 }
 
 .cardHeader {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
@@ -118,6 +122,8 @@
 }
 
 .summary {
+  position: relative;
+  z-index: 2;
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--text-secondary);
@@ -125,6 +131,8 @@
 }
 
 .highlightsBox {
+  position: relative;
+  z-index: 2;
   border-top: 1px solid var(--border-color);
   padding-top: var(--space-md);
 }
@@ -159,6 +167,8 @@
 }
 
 .cardFooter {
+  position: relative;
+  z-index: 2;
   margin-top: auto;
   padding-top: var(--space-sm);
 }

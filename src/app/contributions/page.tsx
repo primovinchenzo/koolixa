@@ -1,14 +1,13 @@
-import React from 'react';
-import Link from 'next/link';
-import { Metadata } from 'next';
-import styles from './contributions.module.css';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Project Contributions & Team Presentations',
-  description: 'Class project contributions and individual technical module presentations for the KOOLIXA web platform.',
-};
+import React, { useState } from 'react';
+import Link from 'next/link';
+import styles from './contributions.module.css';
+import MatrixRainCanvas from '@/components/common/MatrixRainCanvas';
 
 export default function ContributionsPage() {
+  const [hoveredSlug, setHoveredSlug] = useState<string | null>(null);
+
   const contributors = [
     {
       name: 'Vincent Centeno',
@@ -161,7 +160,17 @@ export default function ContributionsPage() {
           <h2 className={styles.sectionTitle}>Team Member Modules</h2>
           <div className={styles.grid}>
             {contributors.map((person) => (
-              <div key={person.slug} className={styles.contributorCard}>
+              <div
+                key={person.slug}
+                className={styles.contributorCard}
+                onMouseEnter={() => setHoveredSlug(person.slug)}
+                onMouseLeave={() => setHoveredSlug(null)}
+              >
+                {/* Matrix Falling Code Rain Effect for Vincent Centeno */}
+                {person.slug === 'vincent-centeno' && (
+                  <MatrixRainCanvas isHovered={hoveredSlug === 'vincent-centeno'} />
+                )}
+
                 <div className={styles.cardHeader}>
                   <div>
                     <span className={styles.contributorName}>{person.name}</span>
@@ -227,7 +236,7 @@ export default function ContributionsPage() {
           <div className={styles.presentationBox}>
             <div className={styles.introBlock}>
               <p className={styles.leadText}>
-                As Lead Architect and AI Pair Engineer, Vincent Centeno directed the technical vision, Next.js 16 full-stack implementation, UI design system, automated support routing, and integration of all team modules.
+                As Founder and Lead Architect, Vincent Centeno directed the technical vision, Next.js 16 full-stack implementation, UI design system, automated support routing, and integration of all team modules.
               </p>
               <p>
                 Engineered KOOLIXA into a production-grade web development platform tailored for companies seeking turnkey website creation, continuous maintenance, and enterprise-grade security.
